@@ -82,7 +82,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     message += `\nMerci BenDjo ! Je souhaite valider cette commande.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/22997000000?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/22901620141?text=${encodedMessage}`;
 
     window.open(whatsappUrl, '_blank');
   };

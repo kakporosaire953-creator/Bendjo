@@ -182,15 +182,15 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
                 )}
 
                 <a
-                  href={`https://wa.me/22997000000?text=Bonjour%20BenDjo%2C%20je%20souhaite%20m'informer%20sur%20votre%20service%20:%20${encodeURIComponent(
+                  href={`https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20m'informer%20sur%20votre%20service%20:%20${encodeURIComponent(
                     srv.title
                   )}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#25D366] text-white font-extrabold text-xs hover:bg-[#20bd5a] transition-all flex items-center justify-center gap-2 shadow-xs"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current" />
-                  <span>Contacter sur WhatsApp (+229 01 62 01 20)</span>
+                  <i className="fa-brands fa-whatsapp text-base"></i>
+                  <span>Contacter sur WhatsApp (+229 01 62 01 41 61)</span>
                 </a>
               </div>
             </div>

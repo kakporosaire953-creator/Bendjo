@@ -44,7 +44,7 @@ export const B2BCalculatorModal: React.FC<B2BCalculatorModalProps> = ({ isOpen, 
     msg += `Bonjour l'équipe BenDjo ! Nous aimerions organiser une séance de dégustation gratuite dans nos locaux à ${location}.`;
 
     const encoded = encodeURIComponent(msg);
-    window.open(`https://wa.me/22997000000?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/22901620141?text=${encoded}`, '_blank');
   };
 
   return (

@@ -63,7 +63,7 @@ export const ContactView: React.FC<ContactViewProps> = () => {
 
       const encoded = encodeURIComponent(waText);
       setTimeout(() => {
-        window.open(`https://wa.me/22997000000?text=${encoded}`, '_blank');
+        window.open(`https://wa.me/22901620141?text=${encoded}`, '_blank');
       }, 1000);
     }
   };
@@ -269,35 +269,35 @@ export const ContactView: React.FC<ContactViewProps> = () => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0 font-extrabold">
-                    <Phone className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-2xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0">
+                    <i className="fa-brands fa-whatsapp text-xl"></i>
                   </div>
                   <div>
                     <div className="font-extrabold text-[#1F2421] text-sm">Téléphone & WhatsApp Direct</div>
-                    <div>+229 97 00 00 00</div>
+                    <a href="tel:+22901620141" className="hover:text-[#25D366] transition-colors font-bold">+229 01 62 01 41 61</a>
                     <div className="text-[11px] text-stone-500">Disponible du Lundi au Samedi (08h00 - 18h00)</div>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-[#EA580C]/10 text-[#EA580C] flex items-center justify-center shrink-0 font-extrabold">
-                    <Mail className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-2xl bg-[#EA580C]/10 text-[#EA580C] flex items-center justify-center shrink-0">
+                    <i className="fa-solid fa-envelope text-lg"></i>
                   </div>
                   <div>
                     <div className="font-extrabold text-[#1F2421] text-sm">Email Officiel</div>
-                    <div>contact@bendjo.bj</div>
+                    <a href="mailto:bendjobenin@gmail.com" className="hover:text-[#EA580C] transition-colors">bendjobenin@gmail.com</a>
                   </div>
                 </li>
               </ul>
 
               {/* Direct WhatsApp button */}
               <a
-                href="https://wa.me/22997000000?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20ou%20demander%20un%20devis."
+                href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20ou%20demander%20un%20devis."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 rounded-2xl bg-[#25D366] text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md hover:bg-[#20bd5a] transition-all"
               >
-                <MessageCircle className="w-4 h-4 fill-current" />
+                <i className="fa-brands fa-whatsapp text-lg"></i>
                 <span>Ouvrir un tchat WhatsApp direct</span>
               </a>
             </div>
@@ -322,6 +322,35 @@ export const ContactView: React.FC<ContactViewProps> = () => {
                   <span><strong>Porto-Novo & Villes du Bénin :</strong> Expédition sous 24h</span>
                 </li>
               </ul>
+            </div>
+
+            {/* Google Map Cotonou Bénin */}
+            <div className="rounded-3xl overflow-hidden border border-[#EA580C]/20 shadow-md">
+              <div className="bg-[#1F2421] px-4 py-3 flex items-center gap-2">
+                <i className="fa-solid fa-location-dot text-[#EA580C] text-sm"></i>
+                <span className="text-white font-extrabold text-xs uppercase tracking-wider">BenDjo — Cotonou, Bénin</span>
+              </div>
+              <iframe
+                title="BenDjo Localisation Cotonou Bénin"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.3683%2C6.3354%2C2.4683%2C6.3954&layer=mapnik&marker=6.3654%2C2.4183"
+                width="100%"
+                height="240"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+              />
+              <div className="bg-white px-4 py-2 flex items-center justify-between">
+                <span className="text-xs text-stone-500 font-semibold">Cotonou, République du Bénin</span>
+                <a
+                  href="https://www.openstreetmap.org/?mlat=6.3654&mlon=2.4183#map=14/6.3654/2.4183"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[#EA580C] font-extrabold hover:underline flex items-center gap-1"
+                >
+                  <i className="fa-solid fa-up-right-from-square text-[10px]"></i>
+                  Agrandir la carte
+                </a>
+              </div>
             </div>
           </div>
         </div>

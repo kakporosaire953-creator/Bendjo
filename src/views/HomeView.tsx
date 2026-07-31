@@ -720,13 +720,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </button>
 
             <a
-              href="https://wa.me/22997000000?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20paquets%20d%27infusions."
+              href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20paquets%20d%27infusions."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md transition-all"
             >
-              <MessageCircle className="w-4 h-4 fill-current" />
-              <span>Commander sur WhatsApp (+229 01 62 01 20)</span>
+              <i className="fa-brands fa-whatsapp text-base"></i>
+              <span>Commander sur WhatsApp (+229 01 62 01 41 61)</span>
             </a>
           </div>
         </div>

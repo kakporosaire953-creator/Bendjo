@@ -44,12 +44,12 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
-                href="https://wa.me/22997000000?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander"
+                href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm"
               >
-                <MessageCircle className="w-4 h-4" />
+                <i className="fa-brands fa-whatsapp text-base"></i>
                 <span>Commandes WhatsApp</span>
               </a>
               <span className="text-sm font-extrabold px-3 py-1.5 rounded-full bg-[#D96123]/20 border border-[#D96123]/40 text-amber-200">
@@ -158,16 +158,16 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
             </h4>
             <ul className="space-y-2 text-sm text-stone-300">
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#D96123] shrink-0 mt-0.5" />
+                <i className="fa-solid fa-location-dot text-[#D96123] shrink-0 mt-0.5 text-sm"></i>
                 <span>Cotonou, Bénin (Livraison Cotonou & Calavi)</span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#D96123] shrink-0" />
-                <span>+229 01 62 01 20 / +229 01 53 ...</span>
+                <i className="fa-brands fa-whatsapp w-4 h-4 text-[#25D366] shrink-0 text-base"></i>
+                <a href="tel:+22901620141" className="hover:text-[#D96123] transition-colors">+229 01 62 01 41 61</a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#D96123] shrink-0" />
-                <span>contact@bendjo.bj</span>
+                <i className="fa-solid fa-envelope w-4 h-4 text-[#D96123] shrink-0 text-sm"></i>
+                <a href="mailto:bendjobenin@gmail.com" className="hover:text-[#D96123] transition-colors">bendjobenin@gmail.com</a>
               </li>
             </ul>
 
