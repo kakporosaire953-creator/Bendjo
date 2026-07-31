@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
                 </span>
               </div>
             </div>
-            <p className="text-amber-200 text-xl sm:text-2xl font-brittany leading-none font-normal max-w-sm my-1">
+            <p className="text-amber-200 text-lg sm:text-xl font-chic italic leading-snug font-normal max-w-sm my-1">
               « Le thé qui vous reconnecte à vos origines »
             </p>
             <p className="text-xs text-stone-300 leading-relaxed">
@@ -171,46 +171,52 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
               </li>
             </ul>
 
-            {/* Admin Panel Button */}
-            <div className="pt-2 space-y-2">
+            {/* Admin Panel Button & Social Links */}
+            <div className="pt-2 space-y-3">
               {onOpenAdminModal && (
                 <button
                   onClick={onOpenAdminModal}
-                  className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-[#D96123] text-amber-100 hover:text-white border border-white/20 transition-all text-xs font-bold shadow-xs"
+                  className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-[#D96123] text-amber-100 hover:text-white border border-white/20 transition-all text-xs font-bold shadow-xs cursor-pointer"
                 >
                   <Lock className="w-3.5 h-3.5 text-amber-200" />
                   <span>Espace Admin • Gestion Produits</span>
                 </button>
               )}
 
-              <div className="flex items-center gap-2">
-                <a
-                  href="https://facebook.com/BenDjoBenin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white/10 hover:bg-[#D96123] text-white transition-colors"
-                  title="Facebook BenDjo"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-                <a
-                  href="https://linkedin.com/company/bendjo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white/10 hover:bg-[#D96123] text-white transition-colors"
-                  title="LinkedIn BenDjo"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/b%C3%A9n%C3%A9dite-lovi-5bb16b22a"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white/10 hover:bg-[#D96123] text-white transition-colors"
-                  title="Bénédite Lovi"
-                >
-                  <Sparkles className="w-3.5 h-3.5" />
-                </a>
+              <div className="space-y-1.5 pt-1">
+                <span className="text-[11px] font-bold text-stone-400 block uppercase tracking-wider">
+                  Suivez-nous :
+                </span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <a
+                    href="https://facebook.com/BenDjoBenin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl bg-white/10 hover:bg-[#1877F2] text-white transition-all flex items-center justify-center w-9 h-9"
+                    title="Facebook BenDjo"
+                  >
+                    <i className="fa-brands fa-facebook-f text-sm"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/company/bendjo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl bg-white/10 hover:bg-[#0A66C2] text-white transition-all flex items-center justify-center w-9 h-9"
+                    title="LinkedIn BenDjo Entreprise"
+                  >
+                    <i className="fa-brands fa-linkedin-in text-sm"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/b%C3%A9n%C3%A9dite-lovi-5bb16b22a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 rounded-xl bg-white/10 hover:bg-[#0A66C2] text-white transition-all flex items-center gap-1.5 text-xs font-bold"
+                    title="LinkedIn Bénédite Lovi (Fondatrice)"
+                  >
+                    <i className="fa-brands fa-linkedin-in text-xs"></i>
+                    <span className="text-[11px]">Bénédite Lovi</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -219,9 +225,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
         {/* Clean copyright section */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-400">
           <div className="flex items-center gap-1.5">
-            <span>© 2025-2026 BenDjo. Un Pur Régal. Fait avec</span>
-            <Heart className="w-3.5 h-3.5 text-[#D96123] fill-current" />
-            <span>au Bénin.</span>
+            <span>© 2026 BenDjo. Un Pur Régal.</span>
           </div>
 
           <div className="flex items-center gap-4 text-stone-400 text-[11px]">

@@ -69,6 +69,9 @@ export const AdminModal: React.FC<AdminModalProps> = ({
   const [tasteNotes, setTasteNotes] = useState('Douce, parfumée et réconfortante');
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [isDragOver, setIsDragOver] = useState(false);
+  const [catalogSearch, setCatalogSearch] = useState('');
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
+  const [confirmReset, setConfirmReset] = useState<boolean>(false);
 
   if (!isOpen) return null;
 
@@ -89,7 +92,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
     const isImage = file.type.startsWith('image');
 
     if (!isVideo && !isImage) {
-      alert('Veuillez sélectionner un fichier image (JPG, PNG, WEBP) ou vidéo (MP4, WEBM).');
+      setSuccessMessage('Veuillez sélectionner un fichier image (JPG, PNG, WEBP) ou vidéo (MP4, WEBM).');
+      setTimeout(() => setSuccessMessage(null), 4000);
       return;
     }
 
@@ -161,8 +165,6 @@ export const AdminModal: React.FC<AdminModalProps> = ({
   };
 
   // Search filter for catalog tab
-  const [catalogSearch, setCatalogSearch] = useState('');
-
   const filteredCatalogProducts = products.filter(p =>
     p.name.toLowerCase().includes(catalogSearch.toLowerCase()) ||
     p.category.toLowerCase().includes(catalogSearch.toLowerCase()) ||
@@ -170,19 +172,17 @@ export const AdminModal: React.FC<AdminModalProps> = ({
   );
 
   const handleDeleteProduct = (productId: string, productName: string) => {
-    if (confirm(`Voulez-vous vraiment supprimer le produit "${productName}" du catalogue BenDjo ? Cette action est immédiate.`)) {
-      setProducts((prev) => prev.filter((p) => p.id !== productId));
-      setSuccessMessage(`Le produit "${productName}" a été supprimé avec succès.`);
-      setTimeout(() => setSuccessMessage(null), 3000);
-    }
+    setProducts((prev) => prev.filter((p) => p.id !== productId));
+    setConfirmDeleteId(null);
+    setSuccessMessage(`Le produit "${productName}" a été supprimé du catalogue avec succès.`);
+    setTimeout(() => setSuccessMessage(null), 3500);
   };
 
   const handleResetDefaultProducts = () => {
-    if (confirm('Voulez-vous réinitialiser le catalogue avec la sélection originale BenDjo ?')) {
-      setProducts(BENDJO_PRODUCTS);
-      setSuccessMessage('Catalogue réinitialisé avec succès.');
-      setTimeout(() => setSuccessMessage(null), 3000);
-    }
+    setProducts(BENDJO_PRODUCTS);
+    setConfirmReset(false);
+    setSuccessMessage('Catalogue réinitialisé avec la sélection d\'origine BenDjo.');
+    setTimeout(() => setSuccessMessage(null), 3500);
   };
 
   return (
@@ -299,10 +299,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
                   <button
                     onClick={() => {
-                      if (confirm('Voulez-vous fermer la session admin ?')) {
-                        setIsAuthenticated(false);
-                        setPinCode('');
-                      }
+                      setIsAuthenticated(false);
+                      setPinCode('');
                     }}
                     className="text-xs text-stone-500 hover:text-stone-800 underline flex items-center gap-1"
                   >
@@ -624,14 +622,35 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                         <i className="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
                       </div>
 
-                      <button
-                        onClick={handleResetDefaultProducts}
-                        title="Réinitialiser les produits par défaut"
-                        className="px-3 py-2 rounded-xl bg-amber-100/80 hover:bg-amber-200 text-amber-900 text-xs font-bold flex items-center justify-center gap-1.5 shrink-0 transition-colors"
-                      >
-                        <RefreshCw className="w-3.5 h-3.5" />
-                        <span>Réinitialiser</span>
-                      </button>
+                      {confirmReset ? (
+                        <div className="flex items-center gap-2 bg-amber-50 p-2 rounded-xl border border-amber-300 text-xs shrink-0">
+                          <span className="font-bold text-amber-900 text-[11px]">Réinitialiser tout ?</span>
+                          <button
+                            type="button"
+                            onClick={handleResetDefaultProducts}
+                            className="px-2.5 py-1 rounded-lg bg-amber-600 text-white font-extrabold text-[11px] hover:bg-amber-700"
+                          >
+                            Oui
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setConfirmReset(false)}
+                            className="px-2.5 py-1 rounded-lg bg-stone-200 text-stone-700 font-bold text-[11px] hover:bg-stone-300"
+                          >
+                            Annuler
+                          </button>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setConfirmReset(true)}
+                          title="Réinitialiser les produits par défaut"
+                          className="px-3 py-2 rounded-xl bg-amber-100/80 hover:bg-amber-200 text-amber-900 text-xs font-bold flex items-center justify-center gap-1.5 shrink-0 transition-colors"
+                        >
+                          <RefreshCw className="w-3.5 h-3.5" />
+                          <span>Réinitialiser</span>
+                        </button>
+                      )}
                     </div>
 
                     <p className="text-xs text-stone-600 flex items-center justify-between">
@@ -649,7 +668,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                         {filteredCatalogProducts.map((prod) => (
                           <div
                             key={prod.id}
-                            className="p-4 rounded-2xl bg-stone-50 border border-stone-200 flex items-center justify-between gap-4 hover:border-[#D96123]/40 transition-colors shadow-2xs"
+                            className="p-4 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-[#D96123]/40 transition-colors shadow-2xs"
                           >
                             <div className="flex items-center gap-3 min-w-0">
                               <div className="w-16 h-16 rounded-xl overflow-hidden bg-stone-900 shrink-0 border border-stone-200">
@@ -677,15 +696,35 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                               </div>
                             </div>
 
-                            <button
-                              type="button"
-                              onClick={() => handleDeleteProduct(prod.id, prod.name)}
-                              className="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white transition-all flex items-center gap-1.5 text-xs font-extrabold shadow-sm hover:shadow-md shrink-0"
-                              title="Supprimer définitivement ce produit"
-                            >
-                              <Trash2 className="w-4 h-4" />
-                              <span>Supprimer</span>
-                            </button>
+                            {confirmDeleteId === prod.id ? (
+                              <div className="flex items-center gap-2 p-2 bg-red-50 rounded-xl border border-red-200 text-xs shrink-0 self-end sm:self-center">
+                                <span className="font-extrabold text-red-700 text-xs">Supprimer ?</span>
+                                <button
+                                  type="button"
+                                  onClick={() => handleDeleteProduct(prod.id, prod.name)}
+                                  className="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs shadow-xs"
+                                >
+                                  Oui, Supprimer
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => setConfirmDeleteId(null)}
+                                  className="px-2.5 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 text-stone-700 font-bold text-xs"
+                                >
+                                  Annuler
+                                </button>
+                              </div>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={() => setConfirmDeleteId(prod.id)}
+                                className="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white transition-all flex items-center gap-1.5 text-xs font-extrabold shadow-sm hover:shadow-md shrink-0 self-end sm:self-center"
+                                title="Supprimer ce produit"
+                              >
+                                <Trash2 className="w-4 h-4" />
+                                <span>Supprimer</span>
+                              </button>
+                            )}
                           </div>
                         ))}
                       </div>

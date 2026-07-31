@@ -333,7 +333,7 @@ Que souhaitez-vous faire ?
                 </div>
                 <div>
                   <h3 className="font-heading font-extrabold text-sm text-white flex items-center gap-1.5">
-                    Conseiller BenDjo AI
+                    Conseiller BenDjo
                     <span className="px-1.5 py-0.5 rounded-full bg-emerald-700/80 text-[9px] font-bold text-emerald-100 uppercase tracking-wider">
                       En Ligne
                     </span>

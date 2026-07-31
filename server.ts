@@ -25,7 +25,7 @@ app.post("/api/chat", async (req, res) => {
       apiKey,
       httpOptions: {
         headers: {
-          'User-Agent': 'aistudio-build',
+          'User-Agent': 'BenDjoWeb/1.0',
         }
       }
     });

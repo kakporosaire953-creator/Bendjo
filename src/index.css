@@ -17,6 +17,14 @@
   font-family: 'Brittany Signature', 'Alex Brush', 'Great Vibes', 'Caveat', cursive;
 }
 
+@utility font-chic {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+@utility font-serif-chic {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
 @layer base {
   :root {
     --bg-creme: #FAF6F0;

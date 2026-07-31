@@ -484,7 +484,7 @@ export const WellnessQuizModal: React.FC<WellnessQuizModalProps> = ({
                     className="text-[#1C3A27] font-bold hover:underline flex items-center gap-1"
                   >
                     <MessageCircle className="w-4 h-4 text-[#D96123]" />
-                    <span>Poser une question au Conseiller IA</span>
+                    <span>Poser une question au Conseiller BenDjo</span>
                   </button>
 
                   <button
