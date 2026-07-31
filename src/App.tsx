@@ -99,7 +99,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#FAF6F0] text-[#1F2421] font-sans selection:bg-[#2D5A36] selection:text-white">
+    <div className="min-h-screen flex flex-col justify-between bg-[#FAF6F0] text-[#1F2421] font-sans selection:bg-[#2D5A36] selection:text-white overflow-x-hidden max-w-full">
       {/* Header */}
       <Header
         currentView={currentView}
