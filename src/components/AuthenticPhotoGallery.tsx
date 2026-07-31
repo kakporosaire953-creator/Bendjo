@@ -13,24 +13,16 @@ import {
   Eye,
   Heart
 } from 'lucide-react';
-import img01 from '../assets/images/bendjo_authentic_01.webp';
-import img02 from '../assets/images/bendjo_authentic_02.webp';
-import img03 from '../assets/images/bendjo_authentic_03.webp';
-import img04 from '../assets/images/bendjo_authentic_04.webp';
-import img05 from '../assets/images/bendjo_authentic_05.webp';
-import img06 from '../assets/images/bendjo_authentic_06.webp';
-import img07 from '../assets/images/bendjo_authentic_07.webp';
-import img08 from '../assets/images/bendjo_authentic_08.webp';
-import img09 from '../assets/images/bendjo_authentic_09.webp';
-import img10 from '../assets/images/bendjo_authentic_10.webp';
-import img11 from '../assets/images/bendjo_authentic_11.webp';
-import img12 from '../assets/images/bendjo_authentic_12.webp';
-import img13 from '../assets/images/bendjo_authentic_13.webp';
-import img14 from '../assets/images/bendjo_authentic_14.webp';
-import img15 from '../assets/images/bendjo_authentic_15.webp';
-import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
-import heroImg from '../assets/images/hero_authentic.webp';
-import logoImg from '../assets/images/logo_authentic.webp';
+import hibiscusImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
+import basilicImg from '../assets/images/bendjo_basilic_tea_1785483940225.jpg';
+import citronnelleImg from '../assets/images/bendjo_citronnelle_tea_1785484352457.jpg';
+import laurierImg from '../assets/images/bendjo_laurier_tea_1785484365853.jpg';
+import coffretImg from '../assets/images/bendjo_coffret_prestige_1785484392625.jpg';
+import founderImg from '../assets/images/bendjo_founder_benedite_1785483963462.jpg';
+import standImg from '../assets/images/bendjo_stand_event_1785483952441.jpg';
+import cateringImg from '../assets/images/bendjo_b2b_catering_1785484404621.jpg';
+import heroImg from '../assets/images/bendjo_hero_banner_1785484378263.jpg';
+import originalFounderImg from '../assets/images/founder.jpg';
 
 export interface GalleryImage {
   id: string;
@@ -46,202 +38,114 @@ export interface GalleryImage {
 
 export const AUTHENTIC_GALLERY_IMAGES: GalleryImage[] = [
   {
-    id: 'g-hero',
-    title: 'Bannière Officielle BenDjo',
+    id: '1',
+    title: 'Infusion BenDjo Hibiscus (1500 FCFA)',
     category: 'product',
     categoryLabel: 'Produits',
-    src: heroImg,
-    description: 'Présentation officielle de la gamme d\'infusions pures BenDjo avec théière traditionnelle.',
-    details: '100% plantes béninoises séchées sans produits chimiques.',
-    badge: 'Image Officielle',
+    src: hibiscusImg,
+    description: 'Boîte éco-conçue Kraft avec sachets scellés d\'infusion d\'Hibiscus (Bissap) 100% naturelle.',
+    details: 'Calices d\'hibiscus pur récoltés à la main au Bénin. Couleur pourpre éclatante et goût acidulé.',
+    badge: 'Meilleure Vente',
     badgeColor: 'bg-[#D64545] text-white'
   },
   {
-    id: 'g-founder',
-    title: 'Bénédicte Lovi — Fondatrice BenDjo',
-    category: 'founder',
-    categoryLabel: 'Direction & Vision',
-    src: founderImg,
-    description: 'Portrait authentique de Bénédicte Lovi, créatrice et innovatrice de BenDjo au Bénin.',
-    details: 'Pionnière de l\'agro-alimentaire bio et des tisanes haut de gamme du terroir béninois.',
-    badge: 'Fondatrice',
-    badgeColor: 'bg-[#2D5A36] text-white'
-  },
-  {
-    id: 'g-logo',
-    title: 'Logo Officiel BenDjo — Monogramme JB',
-    category: 'founder',
-    categoryLabel: 'Direction & Vision',
-    src: logoImg,
-    description: 'Logo monogramme JB officiel de la marque BenDjo, symbole du terroir béninois.',
-    details: 'Identité visuelle soignée reflétant l\'authenticité et l\'élégance artisanale.',
-    badge: 'Identité Marque',
-    badgeColor: 'bg-[#2D5A36] text-white'
-  },
-  {
-    id: 'g-01',
-    title: 'Infusion Hibiscus BenDjo — Sachet Scellé',
+    id: '2',
+    title: 'Infusion BenDjo Basilic (1500 FCFA)',
     category: 'product',
     categoryLabel: 'Produits',
-    src: img01,
-    description: 'Photo authentique du sachet d\'infusion Hibiscus (Bissap) BenDjo à 1500 FCFA.',
-    details: 'Calices d\'hibiscus récoltés à la main au Bénin. Conditionnement éco-responsable.',
-    badge: 'Hibiscus — Best Seller',
-    badgeColor: 'bg-[#D64545] text-white'
-  },
-  {
-    id: 'g-02',
-    title: 'Infusion Basilic BenDjo — Emballage Artisanal',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: img02,
-    description: 'Étui kraft rosé de l\'infusion Basilic apaisante et digestive BenDjo.',
-    details: 'Feuilles de basilic frais séchées artisanalement. Zéro théine ni caféine.',
-    badge: 'Basilic — 100% Bio',
+    src: basilicImg,
+    description: 'Etui Kraft avec touche pastel rose. Feuilles de basilic frais séchées artisanalement.',
+    details: 'Vertus digestives et apaisantes pour le stress. Zéro théine ni caféine.',
+    badge: '100% Bio Local',
     badgeColor: 'bg-[#E895A3] text-stone-900'
   },
   {
-    id: 'g-03',
-    title: 'Infusion Citronnelle & Girofle — Packaging',
+    id: '3',
+    title: 'Infusion Citronnelle & Girofle (1500 FCFA)',
     category: 'product',
     categoryLabel: 'Produits',
-    src: img03,
-    description: 'Emballage Kraft doré de l\'infusion Citronnelle & Clou de Girofle BenDjo.',
-    details: 'Alliance tonique vivifiante entre citronnelle et girofle du terroir béninois.',
-    badge: 'Citronnelle — Tonique',
+    src: citronnelleImg,
+    description: 'Emballage Kraft étiquette jaune dorée. Alliance rafraîchissante de citronnelle et girofle.',
+    details: 'Tonifiant et purifiant naturel, idéal pour les baisses de tonus et réveils difficiles.',
+    badge: 'Formule Tonique',
     badgeColor: 'bg-[#E08A2E] text-white'
   },
   {
-    id: 'g-04',
-    title: 'Infusion Feuilles de Laurier — Nouveauté',
+    id: '4',
+    title: 'Infusion Feuilles de Laurier (1500 FCFA)',
     category: 'product',
     categoryLabel: 'Produits',
-    src: img04,
-    description: 'Nouveauté de la gamme BenDjo : feuilles de laurier béninois soigneusement sélectionnées.',
-    details: 'Effet détoxifiant, soutien de la circulation sanguine. Bientôt disponible.',
-    badge: 'Laurier — Nouveauté',
+    src: laurierImg,
+    description: 'Nouveauté de la gamme BenDjo. Feuilles de laurier béninois soigneusement sélectionnées.',
+    details: 'Effet détoxifiant et soutien de la circulation sanguine.',
+    badge: 'Nouveauté 2024',
     badgeColor: 'bg-[#4B7F52] text-white'
   },
   {
-    id: 'g-05',
+    id: '5',
     title: 'Coffret Prestige Dégustation 30 Sachets',
     category: 'product',
     categoryLabel: 'Produits',
-    src: img05,
+    src: coffretImg,
     description: 'Coffret cadeau artisanal réunissant les 3 recettes iconiques BenDjo.',
     details: '30 sachets scellés fraîcheur sous boîte sérigraphiée. Cadeau d\'entreprise privilégié.',
-    badge: 'Coffret Prestige',
+    badge: 'Coffret Cadeau B2B',
     badgeColor: 'bg-[#C89B6B] text-white'
   },
   {
-    id: 'real-06',
-    title: 'Sachets Individuels Scellés',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: img06,
-    description: 'Gros plan sur l\'étanchéité et la qualité de conservation des sachets BenDjo.',
-    details: 'Hygiène irréprochable et praticité pour le bureau ou la maison.',
-    badge: 'Qualité Certifiée',
-    badgeColor: 'bg-emerald-800 text-white'
-  },
-  {
-    id: 'real-07',
-    title: 'Service Petit-Déjeuner Entreprise B2B',
-    category: 'b2b',
-    categoryLabel: 'Services B2B',
-    src: img07,
-    description: 'Service de restauration et pause thé installée en entreprise à Cotonou.',
-    details: 'Livraison clé en main pour booster l\'énergie et le bien-être des collaborateurs.',
-    badge: 'Offre B2B',
-    badgeColor: 'bg-purple-700 text-white'
-  },
-  {
-    id: 'real-08',
-    title: 'Pause Santé & Bien-Être en Entreprise',
-    category: 'b2b',
-    categoryLabel: 'Services B2B',
-    src: img08,
-    description: 'Installation des thermos et boîtes BenDjo pour les pauses café corporate.',
-    details: 'Boissons saines chaudes et glacées adaptées à l\'environnement professionnel.',
-    badge: 'Partenaire B2B',
-    badgeColor: 'bg-purple-700 text-white'
-  },
-  {
-    id: 'real-09',
-    title: 'Composition Botanique & Plantes Séchées',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: img09,
-    description: 'Ingrédients de première fraîcheur issus des coopératives agricoles du Bénin.',
-    details: 'Hibiscus pourpre, basilic odorant et verveine/citronnelle locale.',
-    badge: 'Plantes Pur',
+    id: '6',
+    title: 'Bénédite Lovi — Co-fondatrice BenDjo & Fondatrice TTI',
+    category: 'founder',
+    categoryLabel: 'Direction & Vision',
+    src: founderImg,
+    description: 'Portrait officiel de Bénédite Lovi, diplômée INSTI et Master Data Science & IA.',
+    details: 'Auteure de projets d\'innovation technologique primés (LOVLAV AUF 2020, SUNA 2022, DSI AWARDS 2023).',
+    badge: 'Leader & Innovatrice',
     badgeColor: 'bg-[#2D5A36] text-white'
   },
   {
-    id: 'real-10',
-    title: 'Coffret Cadeau & Packs Dégustation',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: img10,
-    description: 'Assemblage des boîtes d\'infusions BenDjo en packs cadeaux.',
-    details: 'Idéal pour offrir une expérience sensorielle du terroir béninois.',
-    badge: 'Idée Cadeau',
-    badgeColor: 'bg-[#C89B6B] text-white'
-  },
-  {
-    id: 'real-11',
-    title: 'Présentation sur Stand BenDjo',
+    id: '7',
+    title: 'Stand d\'Exposition BenDjo à Cotonou',
     category: 'event',
     categoryLabel: 'Événements',
-    src: img11,
-    description: 'Mise en scène des produits sur les tables d\'exposition.',
-    details: 'Contact chaleureux et démonstration de préparation d\'infusion.',
-    badge: 'Exposition',
+    src: standImg,
+    description: 'Dégustation interactive sur le stand officiel BenDjo lors d\'un forum d\'innovation au Bénin.',
+    details: 'Distribution de verres d\'infusion chaude et fraîche par nos hôtes et hôtesses de marque.',
+    badge: 'Forums & Salons',
     badgeColor: 'bg-blue-600 text-white'
   },
   {
-    id: 'real-12',
-    title: 'Service Traiteur & Buffet Événementiel',
+    id: '8',
+    title: 'Service Petit-Déjeuner Corporate B2B',
     category: 'b2b',
     categoryLabel: 'Services B2B',
-    src: img12,
-    description: 'Buffet d\'infusions naturelles et rafraîchissements lors d\'une conférence à Cotonou.',
-    details: 'Une touche d\'authenticité locale pour vos séminaires et réceptions.',
-    badge: 'Traiteur VIP',
-    badgeColor: 'bg-purple-700 text-white'
+    src: cateringImg,
+    description: 'Buffet petit-déjeuner et pause thé haut de gamme installé dans une entreprise à Cotonou.',
+    details: 'Distributeurs isothermes d\'infusion BenDjo, corbeilles de viennoiseries et fruits de saison.',
+    badge: '50+ Entreprises Client',
+    badgeColor: 'bg-emerald-700 text-white'
   },
   {
-    id: 'real-13',
-    title: 'Infusion Glacée & Fraîcheur BenDjo',
+    id: '9',
+    title: 'Immersion Terroir & Gamme Complète BenDjo',
     category: 'product',
     categoryLabel: 'Produits',
-    src: img13,
-    description: 'Dégustation d\'infusion glacée Hibiscus et Citronnelle pour se désaltérer.',
-    details: 'Boisson rafraîchissante et désaltérante sans sucres raffinés.',
-    badge: 'Formule Glacée',
-    badgeColor: 'bg-cyan-700 text-white'
+    src: heroImg,
+    description: 'Présentation harmonieuse de toutes nos recettes d\'infusion avec théière en verre et plantes.',
+    details: 'Photographie haute définition mettant à l\'honneur l\'art de l\'infusion béninoise.',
+    badge: 'Aromathérapie Terroir',
+    badgeColor: 'bg-[#D64545] text-white'
   },
   {
-    id: 'real-14',
-    title: 'L\'Art du Thé au Bénin',
+    id: '10',
+    title: 'Origine & Authenticité Béninoise',
     category: 'founder',
     categoryLabel: 'Direction & Vision',
-    src: img14,
-    description: 'Mise en avant de l\'éthique et de l\'authenticité de la marque BenDjo.',
-    details: 'Valorisation des talents locaux et de la biodiversité béninoise.',
-    badge: 'Vision Terroir',
+    src: originalFounderImg,
+    description: 'La passion du fait-main et du respect des producteurs locaux du Bénin.',
+    details: 'Chaque achat soutient directement les coopératives féminines de récolte.',
+    badge: 'Équitable & Ethique',
     badgeColor: 'bg-[#2D5A36] text-white'
-  },
-  {
-    id: 'real-15',
-    title: 'Livraisons & Expéditions BenDjo',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: img15,
-    description: 'Préparation des commandes destinées aux clients de Cotonou, Abomey-Calavi et sous-région.',
-    details: 'Service rapide et suivi rigoureux de chaque colis.',
-    badge: 'Livraison 24h/48h',
-    badgeColor: 'bg-emerald-700 text-white'
   }
 ];
 
