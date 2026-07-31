@@ -44,7 +44,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
-                href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander"
+                href="https://wa.me/22962014161?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm"
@@ -163,7 +163,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
               </li>
               <li className="flex items-center gap-2">
                 <i className="fa-brands fa-whatsapp w-4 h-4 text-[#25D366] shrink-0 text-base"></i>
-                <a href="tel:+22901620141" className="hover:text-[#D96123] transition-colors">+229 01 62 01 41 61</a>
+                <a href="tel:+22962014161" className="hover:text-[#D96123] transition-colors">+229 62 01 41 61</a>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fa-solid fa-envelope w-4 h-4 text-[#D96123] shrink-0 text-sm"></i>

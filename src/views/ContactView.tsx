@@ -63,7 +63,7 @@ export const ContactView: React.FC<ContactViewProps> = () => {
 
       const encoded = encodeURIComponent(waText);
       setTimeout(() => {
-        window.open(`https://wa.me/22901620141?text=${encoded}`, '_blank');
+        window.open(`https://wa.me/22962014161?text=${encoded}`, '_blank');
       }, 1000);
     }
   };
@@ -274,7 +274,7 @@ export const ContactView: React.FC<ContactViewProps> = () => {
                   </div>
                   <div>
                     <div className="font-extrabold text-[#1F2421] text-sm">Téléphone & WhatsApp Direct</div>
-                    <a href="tel:+22901620141" className="hover:text-[#25D366] transition-colors font-bold">+229 01 62 01 41 61</a>
+                    <a href="tel:+22962014161" className="hover:text-[#25D366] transition-colors font-bold">+229 62 01 41 61</a>
                     <div className="text-[11px] text-stone-500">Disponible du Lundi au Samedi (08h00 - 18h00)</div>
                   </div>
                 </li>
@@ -292,7 +292,7 @@ export const ContactView: React.FC<ContactViewProps> = () => {
 
               {/* Direct WhatsApp button */}
               <a
-                href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20ou%20demander%20un%20devis."
+                href="https://wa.me/22962014161?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20ou%20demander%20un%20devis."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 rounded-2xl bg-[#25D366] text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-md hover:bg-[#20bd5a] transition-all"

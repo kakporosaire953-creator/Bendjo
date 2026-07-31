@@ -180,7 +180,7 @@ export const FaqSection: React.FC = () => {
       {/* Need more help direct link */}
       <div className="text-center pt-2">
         <a
-          href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20j%27ai%20une%20question%20particuli%C3%A8re."
+          href="https://wa.me/22962014161?text=Bonjour%20BenDjo%2C%20j%27ai%20une%20question%20particuli%C3%A8re."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] text-white font-extrabold text-xs shadow-xs hover:bg-[#20bd5a] transition-all"

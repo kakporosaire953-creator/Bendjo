@@ -144,7 +144,7 @@ export const Header: React.FC<HeaderProps> = ({
 
               {/* Direct WhatsApp Quick Order */}
               <a
-                href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20naturelles%20ou%20me%20renseigner%20sur%20vos%20services."
+                href="https://wa.me/22962014161?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20naturelles%20ou%20me%20renseigner%20sur%20vos%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 id="whatsapp-header-direct-link"
@@ -249,7 +249,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
 
                 <a
-                  href="https://wa.me/22901620141?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20naturelles."
+                  href="https://wa.me/22962014161?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander%20des%20infusions%20naturelles."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3.5 px-4 rounded-2xl bg-[#25D366] text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-sm"
