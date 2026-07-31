@@ -7,6 +7,8 @@ import { MediaDisplay } from '../components/MediaDisplay';
 import { BenDjoVideoShowcase } from '../components/BenDjoVideoShowcase';
 import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
 import heroBannerImg from '../assets/images/hero_authentic.webp';
+import importantImg1 from '../assets/images/important_authentic_1.webp';
+import importantImg2 from '../assets/images/important_authentic_2.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Leaf,
@@ -309,6 +311,78 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
         </motion.section>
       )}
+
+      {/* FEATURED QUALITY & AUTHENTIC HARVEST SHOWCASE */}
+      <motion.section
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-50px' }}
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#1C261D] via-[#233325] to-[#1C261D] text-white border border-[#2D5A36]/40 shadow-2xl space-y-8">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D96123]/20 border border-[#D96123]/40 text-amber-300 text-xs font-extrabold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Engagement Qualité & Authenticité Terroir</span>
+            </div>
+            <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-white">
+              De la terre béninoise à votre tasse : La garantie d'une pureté absolue
+            </h2>
+            <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
+              Chez <strong>BenDjo</strong>, chaque sachet d'infusion est le fruit d'une récolte exigeante et d'un séchage artisanal préservant l'intégralité des principes actifs et huiles essentielles.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Visual Card 1 */}
+            <div className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl bg-stone-900">
+              <div className="relative h-64 sm:h-72 overflow-hidden">
+                <img
+                  src={importantImg1}
+                  alt="Processus de sélection et conditionnement BenDjo"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#2D5A36] text-white text-[10px] font-extrabold uppercase tracking-wider shadow-md">
+                  Plantes Pures du Bénin
+                </span>
+              </div>
+              <div className="p-5 space-y-2">
+                <h3 className="font-heading font-extrabold text-base text-white">
+                  Sélection & Récolte Éthique
+                </h3>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  Plantes cultivées sans engrais chimiques ni arômes de synthèse. Un respect strict du cycle naturel des récoltes à Cotonou et dans les coopératives rurales.
+                </p>
+              </div>
+            </div>
+
+            {/* Visual Card 2 */}
+            <div className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl bg-stone-900">
+              <div className="relative h-64 sm:h-72 overflow-hidden">
+                <img
+                  src={importantImg2}
+                  alt="Présentation authentique des étuis BenDjo 1500 FCFA"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#D96123] text-white text-[10px] font-extrabold uppercase tracking-wider shadow-md">
+                  Sachets Scellés Fraîcheur
+                </span>
+              </div>
+              <div className="p-5 space-y-2">
+                <h3 className="font-heading font-extrabold text-base text-white">
+                  Conditionnement Éco-Responsable
+                </h3>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  Des étuis Kraft soignés et des sachets individuellement scellés pour offrir une expérience gustative et aromatique exceptionnelle à chaque tasse.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
       {/* 2. APERÇU À PROPOS AVEC FONT-IN FADE ANIMATION */}
       <motion.section

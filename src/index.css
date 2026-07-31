@@ -87,3 +87,28 @@
   background-size: 24px 24px;
 }
 
+/* Mobile GPU Anti-Banding & Artifact Prevention */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  /* Prevent horizontal color banding artifacts caused by large CSS blur gradients on mobile GPU */
+  .blur-3xl, .blur-2xl, .blur-xl {
+    filter: blur(24px) !important;
+    opacity: 0.45 !important;
+    transform: translateZ(0);
+    will-change: opacity;
+  }
+
+  /* Prevent subpixel border bleeding and horizontal line artifacts on mobile Chrome / Safari */
+  img, div, section, header, footer {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+

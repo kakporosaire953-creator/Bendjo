@@ -1,6 +1,6 @@
 import { Product } from '../types';
-import hibiscusImg from '../assets/images/bendjo_authentic_01.webp';
-import basilicImg from '../assets/images/bendjo_authentic_02.webp';
+import hibiscusImg from '../assets/images/produit_authentic_1.webp';
+import basilicImg from '../assets/images/produit_authentic_2.webp';
 import citronnelleImg from '../assets/images/bendjo_authentic_03.webp';
 import laurierImg from '../assets/images/bendjo_authentic_04.webp';
 import coffretImg from '../assets/images/bendjo_authentic_05.webp';
