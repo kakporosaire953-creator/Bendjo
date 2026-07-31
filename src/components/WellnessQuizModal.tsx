@@ -146,8 +146,8 @@ export const WellnessQuizModal: React.FC<WellnessQuizModalProps> = ({
                 <img src={bendjoMonogramLogo} alt="Logo BenDjo" className="w-full h-full object-contain mix-blend-multiply" />
               </div>
               <div>
-                <span className="px-2.5 py-0.5 rounded-full bg-[#D96123] text-white text-[10px] font-extrabold uppercase tracking-wider inline-flex items-center gap-1">
-                  <Sparkles className="w-3 h-3" /> Diagnostic Sante & Infusion
+                <span className="px-2.5 py-0.5 rounded-full bg-[#D96123] text-white text-xs font-extrabold uppercase tracking-wider inline-flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" /> Diagnostic Santé & Infusion
                 </span>
                 <h2 className="font-heading font-extrabold text-xl sm:text-2xl text-white mt-1">
                   Quiz Diagnostic Bien-Être Sur-Mesure

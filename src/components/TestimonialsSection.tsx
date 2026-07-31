@@ -13,7 +13,7 @@ export const TestimonialsSection: React.FC = () => {
         <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#1F2421]">
           Ce que disent nos consommateur(rice)s
         </h2>
-        <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
           Retours spontanés partagés par nos clients à Cotonou et partout au Bénin. Tous les retours sont publiés de façon anonyme pour le respect de leur vie privée.
         </p>
       </div>
@@ -32,11 +32,11 @@ export const TestimonialsSection: React.FC = () => {
               <div className="flex items-center justify-between gap-2 border-b border-stone-100 pb-3">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-[#4B7F52]" />
-                  <span className="text-xs font-bold text-[#1F2421]">{item.tag}</span>
+                  <span className="text-sm font-bold text-[#1F2421]">{item.tag}</span>
                 </div>
                 <div className="flex items-center gap-1 bg-[#FAF6F0] px-2.5 py-1 rounded-full border border-[#C89B6B]/20">
-                  <CheckCircle2 className="w-3 h-3 text-[#4B7F52]" />
-                  <span className="text-[10px] font-bold text-[#4B7F52]">{item.badge}</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#4B7F52]" />
+                  <span className="text-xs font-bold text-[#4B7F52]">{item.badge}</span>
                 </div>
               </div>
 
@@ -48,18 +48,18 @@ export const TestimonialsSection: React.FC = () => {
               </div>
 
               {/* Exact Text Message */}
-              <p className="text-xs sm:text-sm text-gray-800 italic leading-relaxed bg-[#FAF6F0]/60 p-4 rounded-2xl border border-stone-200/60 font-serif">
+              <p className="text-sm sm:text-base text-gray-800 italic leading-relaxed bg-[#FAF6F0]/60 p-4 rounded-2xl border border-stone-200/60 font-serif">
                 « {item.content} »
               </p>
             </div>
 
             {/* Highlight summary */}
-            <div className="relative z-10 pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] font-bold text-[#2D5A36]">
+            <div className="relative z-10 pt-2 border-t border-stone-100 flex items-center justify-between text-xs sm:text-sm font-bold text-[#2D5A36]">
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#E08A2E]" />
                 <span>{item.highlight}</span>
               </span>
-              <span className="text-[10px] text-gray-500 font-normal">Message WhatsApp</span>
+              <span className="text-xs text-gray-500 font-normal">Message WhatsApp</span>
             </div>
           </div>
         ))}

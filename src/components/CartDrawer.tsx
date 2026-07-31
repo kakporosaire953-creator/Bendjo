@@ -160,12 +160,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       <h4 className="font-bold text-sm text-[#1F2421] truncate font-heading">
                         {item.product.name}
                       </h4>
-                      <p className="text-[11px] text-gray-500 truncate mb-1">
+                      <p className="text-xs text-gray-500 truncate mb-1">
                         {item.product.format}
                       </p>
-                      <div className="text-xs font-bold text-[#4B7F52]">
+                      <div className="text-sm font-bold text-[#4B7F52]">
                         {item.product.priceFcfa.toLocaleString('fr-FR')} FCFA{' '}
-                        <span className="text-[10px] text-gray-400 font-normal">
+                        <span className="text-xs text-gray-400 font-normal">
                           (~{item.product.priceEur.toFixed(2)} €)
                         </span>
                       </div>
@@ -220,7 +220,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 </h4>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-gray-700 mb-1">
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">
                     Votre Nom & Prénom (Facultatif)
                   </label>
                   <input
@@ -228,18 +228,18 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     value={customerName}
                     onChange={(e) => setCustomerName(e.target.value)}
                     placeholder="ex. Koffi Aïko"
-                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-xs focus:outline-none focus:border-[#4B7F52] bg-white"
+                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#4B7F52] bg-white"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-gray-700 mb-1">
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">
                     Ville de Livraison
                   </label>
                   <select
                     value={deliveryCity}
                     onChange={(e) => setDeliveryCity(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-xs focus:outline-none focus:border-[#4B7F52] bg-white"
+                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#4B7F52] bg-white"
                   >
                     <option value="Cotonou">Cotonou (Livraison Express)</option>
                     <option value="Abomey-Calavi">Abomey-Calavi</option>
@@ -250,7 +250,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-gray-700 mb-1">
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">
                     Notes ou instructions spéciales
                   </label>
                   <textarea
@@ -258,7 +258,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     onChange={(e) => setCustomerNotes(e.target.value)}
                     rows={2}
                     placeholder="Quartier, heure de livraison préférée..."
-                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-xs focus:outline-none focus:border-[#4B7F52] bg-white resize-none"
+                    className="w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-[#4B7F52] bg-white resize-none"
                   />
                 </div>
               </div>

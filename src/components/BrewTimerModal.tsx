@@ -102,8 +102,8 @@ export const BrewTimerModal: React.FC<BrewTimerModalProps> = ({ isOpen, onClose 
                 }`}
               >
                 <div className="w-2 h-2 rounded-full mb-1" style={{ backgroundColor: p.color }} />
-                <div className="truncate text-[#1F2421]">{p.name}</div>
-                <div className="text-[10px] text-gray-400 font-normal">{p.temp}</div>
+                <div className="truncate text-[#1F2421] font-medium">{p.name}</div>
+                <div className="text-xs text-gray-500 font-normal">{p.temp}</div>
               </button>
             );
           })}
@@ -125,14 +125,14 @@ export const BrewTimerModal: React.FC<BrewTimerModalProps> = ({ isOpen, onClose 
               <span className="text-4xl font-extrabold font-heading tracking-tight text-[#1F2421]">
                 {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
               </span>
-              <span className="block text-[11px] font-semibold text-[#C89B6B] mt-1">
+              <span className="block text-xs font-semibold text-[#C89B6B] mt-1">
                 Eau à {selectedPreset.temp}
               </span>
             </div>
           </div>
 
           {isFinished && (
-            <div className="mt-4 p-3 rounded-2xl bg-[#25D366]/10 text-[#25D366] text-xs font-bold flex items-center gap-2 animate-bounce">
+            <div className="mt-4 p-3 rounded-2xl bg-[#25D366]/10 text-[#25D366] text-sm font-bold flex items-center gap-2 animate-bounce">
               <BellRing className="w-4 h-4" />
               <span>Votre infusion est prête à être dégustée !</span>
             </div>
@@ -151,7 +151,7 @@ export const BrewTimerModal: React.FC<BrewTimerModalProps> = ({ isOpen, onClose 
 
           <button
             onClick={handleTogglePlay}
-            className={`px-8 py-3.5 rounded-2xl font-bold text-xs text-white shadow-md flex items-center gap-2 transition-all ${
+            className={`px-8 py-3.5 rounded-2xl font-bold text-sm text-white shadow-md flex items-center gap-2 transition-all ${
               isActive
                 ? 'bg-[#E08A2E] hover:bg-[#c97822]'
                 : 'bg-[#2D5A36] hover:bg-[#1f3f26]'
@@ -175,7 +175,7 @@ export const BrewTimerModal: React.FC<BrewTimerModalProps> = ({ isOpen, onClose 
           <p className="font-brittany text-2xl text-[#D96123] font-normal leading-none">
             Bonne dégustation avec BenDjo
           </p>
-          <p className="text-[10px] text-stone-500">
+          <p className="text-xs text-stone-600">
             💡 Conseil : Laissez infuser à couvert pour conserver toutes les huiles essentielles.
           </p>
         </div>

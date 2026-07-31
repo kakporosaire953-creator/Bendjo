@@ -87,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Ben<span className="text-[#D96123]">Djo</span>
                 </span>
                 <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-[10px] text-[#2D5A36] font-extrabold tracking-wider uppercase block">
+                  <span className="text-xs text-[#2D5A36] font-extrabold tracking-wider uppercase block">
                     THÉ NATUREL
                   </span>
                   <span className="font-brittany text-base text-[#D96123] font-normal leading-none ml-0.5">
@@ -106,7 +106,7 @@ export const Header: React.FC<HeaderProps> = ({
                     key={item.view}
                     onClick={() => handleNavClick(item.view)}
                     id={`nav-link-${item.view}`}
-                    className={`relative px-4 py-2 rounded-full text-xs font-extrabold transition-all duration-200 ${
+                    className={`relative px-4 py-2 rounded-full text-sm font-extrabold transition-all duration-200 ${
                       active
                         ? 'bg-[#2D5A36] text-white shadow-xs'
                         : 'text-[#1F2421] hover:text-[#D96123] hover:bg-[#FFF8F0]'
@@ -136,7 +136,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <i className="fa-solid fa-basket-shopping text-base text-[#2D5A36]"></i>
                 {cartCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-[#D96123] text-white text-[10px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-xs animate-pulse">
+                  <span className="absolute -top-1 -right-1 bg-[#D96123] text-white text-xs font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-xs animate-pulse">
                     {cartCount}
                   </span>
                 )}
@@ -148,7 +148,7 @@ export const Header: React.FC<HeaderProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 id="whatsapp-header-direct-link"
-                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-xs font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm hover:shadow-md"
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm hover:shadow-md"
               >
                 <i className="fa-brands fa-whatsapp text-sm"></i>
                 <span>WhatsApp</span>

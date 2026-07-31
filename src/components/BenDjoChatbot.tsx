@@ -304,7 +304,7 @@ Que souhaitez-vous faire ?
                   Conseiller BenDjo
                   <Sparkles className="w-3 h-3 text-amber-300 animate-spin" style={{ animationDuration: '4s' }} />
                 </div>
-                <div className="text-[10px] text-stone-300">Poser une question</div>
+                <div className="text-xs text-stone-300">Poser une question</div>
               </div>
 
               <div className="p-1.5 rounded-full bg-[#D96123] text-white">
@@ -334,11 +334,11 @@ Que souhaitez-vous faire ?
                 <div>
                   <h3 className="font-heading font-extrabold text-sm text-white flex items-center gap-1.5">
                     Conseiller BenDjo
-                    <span className="px-1.5 py-0.5 rounded-full bg-emerald-700/80 text-[9px] font-bold text-emerald-100 uppercase tracking-wider">
+                    <span className="px-1.5 py-0.5 rounded-full bg-emerald-700/80 text-xs font-bold text-emerald-100 uppercase tracking-wider">
                       En Ligne
                     </span>
                   </h3>
-                  <p className="text-[11px] text-emerald-200/80">
+                  <p className="text-xs text-emerald-200/80">
                     Infusions 100% béninoises & conseils santé
                   </p>
                 </div>
@@ -444,7 +444,7 @@ Que souhaitez-vous faire ?
                       </div>
                     )}
 
-                    <div className={`text-[9px] text-stone-400 ${msg.sender === 'user' ? 'text-right mr-1' : 'ml-1'}`}>
+                    <div className={`text-xs text-stone-400 ${msg.sender === 'user' ? 'text-right mr-1' : 'ml-1'}`}>
                       {msg.timestamp}
                     </div>
                   </div>
@@ -467,7 +467,7 @@ Que souhaitez-vous faire ?
                     <span className="w-2 h-2 rounded-full bg-emerald-600 animate-bounce" />
                     <span className="w-2 h-2 rounded-full bg-emerald-600 animate-bounce" style={{ animationDelay: '0.2s' }} />
                     <span className="w-2 h-2 rounded-full bg-emerald-600 animate-bounce" style={{ animationDelay: '0.4s' }} />
-                    <span className="ml-1 text-[11px] font-medium text-stone-400">Rédaction du conseil...</span>
+                    <span className="ml-1 text-xs font-medium text-stone-400">Rédaction du conseil...</span>
                   </div>
                 </div>
               )}
@@ -481,7 +481,7 @@ Que souhaitez-vous faire ?
                 <button
                   key={idx}
                   onClick={() => handleSendMessage(sug.text)}
-                  className="px-2.5 py-1 rounded-full bg-white border border-stone-300 hover:border-[#D96123] text-stone-700 hover:text-[#D96123] text-[10px] font-bold whitespace-nowrap transition-all shadow-2xs shrink-0"
+                  className="px-2.5 py-1 rounded-full bg-white border border-stone-300 hover:border-[#D96123] text-stone-700 hover:text-[#D96123] text-xs font-bold whitespace-nowrap transition-all shadow-2xs shrink-0"
                 >
                   {sug.label}
                 </button>

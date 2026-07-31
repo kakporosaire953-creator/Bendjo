@@ -1,4 +1,4 @@
-#  BenDjo — La marque qui vous reconnecte à vos origines
+# 🍃 BenDjo — La marque qui vous reconnecte à vos origines
 
 Bienvenue dans le dépôt officiel de la plateforme web de **BenDjo**, la marque béninoise d'infusions et tisanes 100% naturelles du terroir (Hibiscus pourpre, Basilic apaisant, Citronnelle & Girofle vivifiante, Feuilles de Laurier détox). 
 
@@ -6,13 +6,13 @@ Fondée par **Bénédite Lovi**, BenDjo sublime les ressources végétales local
 
 ---
 
-##  Présentation du Projet & Philosophie
+## 🚀 Présentation du Projet & Philosophie
 
 La plateforme web **BenDjo** a été conçue pour offrir une navigation fluide, chaleureuse et haut de gamme. Elle met en valeur la fraîcheur des plantes séchées à l'ombre, la noblesse des emballages Kraft éco-responsables, ainsi que la démarche éthique et artisanale de la marque à Cotonou et Abomey-Calavi.
 
 ---
 
-##  Fonctionnalités Principales de la Plateforme
+## ✨ Fonctionnalités Principales de la Plateforme
 
 ### 1. 📦 Catalogue de Produits & Panier Interactif
 * **Navigation fluide** par catégorie (Infusions individuelles, Coffrets Prestige, Nouveautés).
@@ -51,7 +51,7 @@ Situé **tout en bas du pied de page (Footer)** sous l'intitulé **« Espace Adm
 
 ---
 
-##  Optimisation SEO & Référencement Naturel (Google)
+## 🔍 Optimisation SEO & Référencement Naturel (Google)
 
 Le site intègre les meilleures pratiques de référencement naturel pour garantir un classement optimal sur Google, particulièrement sur la recherche locale à Cotonou et au Bénin :
 

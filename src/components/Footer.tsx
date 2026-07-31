@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
                 <span className="font-heading font-extrabold text-2xl tracking-tight text-white block leading-none">
                   Ben<span className="text-[#D96123]">Djo</span>
                 </span>
-                <span className="text-[10px] text-amber-200/90 font-extrabold tracking-wider uppercase block mt-0.5">
+                <span className="text-xs text-amber-200/90 font-extrabold tracking-wider uppercase block mt-0.5">
                   UN PUR RÉGAL • THÉ NATUREL
                 </span>
               </div>
@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
             <p className="text-amber-200 text-lg sm:text-xl font-chic italic leading-snug font-normal max-w-sm my-1">
               « Le thé qui vous reconnecte à vos origines »
             </p>
-            <p className="text-xs text-stone-300 leading-relaxed">
+            <p className="text-sm text-stone-300 leading-relaxed">
               Fondée à Cotonou (Bénin), BenDjo valorise le terroir béninois à travers des infusions 100% naturelles (Basilic, Hibiscus, Citronnelle, Laurier, Clou de Girofle) et un service de restauration & petit-déjeuner sain en entreprise.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
@@ -47,12 +47,12 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
                 href="https://wa.me/22997000000?text=Bonjour%20BenDjo%2C%20je%20souhaite%20commander"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-xs font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-extrabold hover:bg-[#20bd5a] transition-all shadow-sm"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Commandes WhatsApp</span>
               </a>
-              <span className="text-xs font-extrabold px-3 py-1.5 rounded-full bg-[#D96123]/20 border border-[#D96123]/40 text-amber-200">
+              <span className="text-sm font-extrabold px-3 py-1.5 rounded-full bg-[#D96123]/20 border border-[#D96123]/40 text-amber-200">
                 1500 FCFA / Paquet
               </span>
             </div>
@@ -60,10 +60,10 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
 
           {/* Navigation Links */}
           <div className="space-y-3">
-            <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#D96123]">
+            <h4 className="text-sm font-extrabold uppercase tracking-widest text-[#D96123]">
               Navigation
             </h4>
-            <ul className="space-y-2 text-xs text-stone-300">
+            <ul className="space-y-2 text-sm text-stone-300">
               <li>
                 <button
                   onClick={() => {
@@ -124,10 +124,10 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
 
           {/* Nos Infusions */}
           <div className="space-y-3">
-            <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#D96123]">
+            <h4 className="text-sm font-extrabold uppercase tracking-widest text-[#D96123]">
               Saveurs du Terroir
             </h4>
-            <ul className="space-y-2 text-xs text-stone-300">
+            <ul className="space-y-2 text-sm text-stone-300">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#D96123]" />
                 <span>Basilic Apaisant</span>
@@ -153,10 +153,10 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
 
           {/* Coordonnées, Réseaux & Admin Panel Button */}
           <div className="space-y-3">
-            <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#D96123]">
+            <h4 className="text-sm font-extrabold uppercase tracking-widest text-[#D96123]">
               Contacts & Admin
             </h4>
-            <ul className="space-y-2 text-xs text-stone-300">
+            <ul className="space-y-2 text-sm text-stone-300">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#D96123] shrink-0 mt-0.5" />
                 <span>Cotonou, Bénin (Livraison Cotonou & Calavi)</span>
@@ -184,7 +184,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
               )}
 
               <div className="space-y-1.5 pt-1">
-                <span className="text-[11px] font-bold text-stone-400 block uppercase tracking-wider">
+                <span className="text-xs font-bold text-stone-300 block uppercase tracking-wider">
                   Suivez-nous :
                 </span>
                 <div className="flex items-center gap-2 flex-wrap">
@@ -214,7 +214,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
                     title="LinkedIn Bénédite Lovi (Fondatrice)"
                   >
                     <i className="fa-brands fa-linkedin-in text-xs"></i>
-                    <span className="text-[11px]">Bénédite Lovi</span>
+                    <span className="text-xs">Bénédite Lovi</span>
                   </a>
                 </div>
               </div>
@@ -223,12 +223,12 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
         </div>
 
         {/* Clean copyright section */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-300">
           <div className="flex items-center gap-1.5">
             <span>© 2026 BenDjo. Un Pur Régal.</span>
           </div>
 
-          <div className="flex items-center gap-4 text-stone-400 text-[11px]">
+          <div className="flex items-center gap-4 text-stone-300 text-xs sm:text-sm">
             <span className="text-amber-200 font-bold">100% Naturel • Sans Additifs</span>
             <span>•</span>
             <span>Cotonou, Bénin</span>

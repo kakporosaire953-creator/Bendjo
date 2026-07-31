@@ -71,10 +71,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
             {/* Taste Notes Overlay */}
             <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/90 backdrop-blur-md text-[#1F2421] space-y-1">
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#C89B6B]">
+              <div className="text-xs font-bold uppercase tracking-wider text-[#C89B6B]">
                 Profil Gustatif
               </div>
-              <p className="text-xs font-medium italic">"{product.tasteNotes}"</p>
+              <p className="text-sm font-medium italic">"{product.tasteNotes}"</p>
             </div>
           </div>
 
@@ -88,14 +88,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <h2 className="text-2xl font-extrabold font-heading text-[#1F2421]">
                   {product.name}
                 </h2>
-                <p className="text-xs text-[#D96123] font-semibold mt-1">
+                <p className="text-sm text-[#D96123] font-semibold mt-1">
                   {product.subtitle}
                 </p>
               </div>
 
               {/* Taste notes handwritten badge */}
               <div className="px-3.5 py-2 rounded-2xl bg-[#FFF8F0] border border-[#D96123]/25 flex items-center justify-between gap-2 shadow-xs">
-                <span className="text-[10px] font-extrabold uppercase text-[#2D5A36] tracking-wider shrink-0">
+                <span className="text-xs font-extrabold uppercase text-[#2D5A36] tracking-wider shrink-0">
                   Note d'Arôme :
                 </span>
                 <span className="font-brittany text-xl text-[#D96123] font-normal leading-none truncate">
@@ -103,23 +103,23 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 </span>
               </div>
 
-              <p className="text-xs text-gray-700 leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 {product.description}
               </p>
 
               {/* Brewing Params */}
-              <div className="grid grid-cols-2 gap-3 p-3 rounded-2xl bg-white border border-[#C89B6B]/20 text-xs">
+              <div className="grid grid-cols-2 gap-3 p-3 rounded-2xl bg-white border border-[#C89B6B]/20 text-sm">
                 <div className="flex items-center gap-2">
                   <Flame className="w-4 h-4 text-[#D64545]" />
                   <div>
-                    <span className="text-[10px] text-gray-500 block">Température</span>
+                    <span className="text-xs text-gray-500 block">Température</span>
                     <span className="font-bold text-[#1F2421]">{product.brewingTemp}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-[#E08A2E]" />
                   <div>
-                    <span className="text-[10px] text-gray-500 block">Temps d'infusion</span>
+                    <span className="text-xs text-gray-500 block">Temps d'infusion</span>
                     <span className="font-bold text-[#1F2421]">{product.brewingTime}</span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <Sparkles className="w-3.5 h-3.5 text-[#4B7F52]" />
                   <span>Bienfaits & Nutriments</span>
                 </h4>
-                <ul className="space-y-1 text-xs text-gray-700">
+                <ul className="space-y-1 text-sm text-gray-700">
                   {product.benefits.map((b, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-[#4B7F52] shrink-0 mt-0.5" />
@@ -146,7 +146,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {product.vitamins.map((v, i) => (
                   <span
                     key={i}
-                    className="px-2.5 py-1 rounded-full bg-[#4B7F52]/10 text-[#4B7F52] text-[10px] font-bold"
+                    className="px-2.5 py-1 rounded-full bg-[#4B7F52]/10 text-[#4B7F52] text-xs font-bold"
                   >
                     {v}
                   </span>
@@ -154,7 +154,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {product.minerals.map((m, i) => (
                   <span
                     key={i}
-                    className="px-2.5 py-1 rounded-full bg-[#C89B6B]/15 text-[#3D271D] text-[10px] font-bold"
+                    className="px-2.5 py-1 rounded-full bg-[#C89B6B]/15 text-[#3D271D] text-xs font-bold"
                   >
                     {m}
                   </span>
