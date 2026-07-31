@@ -19,7 +19,7 @@ import {
   Share2,
   Check
 } from 'lucide-react';
-import bendjoMonogramLogo from '../assets/images/bendjo_monogram_jb_logo_1785486826868.jpg';
+import bendjoMonogramLogo from '../assets/images/logo_authentic.webp';
 import { Product } from '../types';
 import { BENDJO_PRODUCTS } from '../data/products';
 

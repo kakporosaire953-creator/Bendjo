@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageView } from '../types';
 import { Leaf, MapPin, Phone, Mail, MessageCircle, ExternalLink, Heart, Sparkles, ShieldCheck, Lock } from 'lucide-react';
-import bendjoMonogramLogo from '../assets/images/bendjo_monogram_jb_logo_1785486826868.jpg';
+import bendjoMonogramLogo from '../assets/images/logo_authentic.webp';
 
 interface FooterProps {
   setCurrentView: (view: PageView) => void;

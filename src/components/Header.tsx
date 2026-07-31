@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PageView } from '../types';
 import { ShoppingBag, Menu, X, Timer, Sparkles, MessageCircle, Leaf, Flame, Camera } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import bendjoMonogramLogo from '../assets/images/bendjo_monogram_jb_logo_1785486826868.jpg';
+import bendjoMonogramLogo from '../assets/images/logo_authentic.webp';
 
 interface HeaderProps {
   currentView: PageView;

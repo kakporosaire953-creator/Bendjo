@@ -1,8 +1,8 @@
 import React from 'react';
 import { PageView } from '../types';
 import { TestimonialsSection } from '../components/TestimonialsSection';
-import founderImg from '../assets/images/bendjo_founder_benedite_1785483963462.jpg';
-import standImg from '../assets/images/bendjo_stand_event_1785483952441.jpg';
+import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
+import standImg from '../assets/images/bendjo_authentic_01.webp';
 import { motion } from 'framer-motion';
 import {
   Leaf,

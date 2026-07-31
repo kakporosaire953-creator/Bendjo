@@ -5,8 +5,8 @@ import { TestimonialsSection } from '../components/TestimonialsSection';
 import { FaqSection } from '../components/FaqSection';
 import { MediaDisplay } from '../components/MediaDisplay';
 import { BenDjoVideoShowcase } from '../components/BenDjoVideoShowcase';
-import founderImg from '../assets/images/bendjo_founder_benedite_1785483963462.jpg';
-import heroBannerImg from '../assets/images/bendjo_hero_banner_1785484378263.jpg';
+import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
+import heroBannerImg from '../assets/images/hero_authentic.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Leaf,
