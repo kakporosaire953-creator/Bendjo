@@ -20,11 +20,11 @@ import {
 } from 'lucide-react';
 import { MediaDisplay } from './MediaDisplay';
 import { BENDJO_PRODUCTS } from '../data/products';
-import hibiscusImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
-import basilicImg from '../assets/images/bendjo_basilic_tea_1785483940225.jpg';
-import citronnelleImg from '../assets/images/bendjo_citronnelle_tea_1785484352457.jpg';
-import laurierImg from '../assets/images/bendjo_laurier_tea_1785484365853.jpg';
-import coffretImg from '../assets/images/bendjo_coffret_prestige_1785484392625.jpg';
+import hibiscusImg from '../assets/images/bendjo_authentic_13.webp';
+import basilicImg from '../assets/images/bendjo_authentic_14.webp';
+import citronnelleImg from '../assets/images/bendjo_authentic_15.webp';
+import laurierImg from '../assets/images/benedicte_lovi_authentic.webp';
+import coffretImg from '../assets/images/hero_authentic.webp';
 
 interface AdminModalProps {
   isOpen: boolean;

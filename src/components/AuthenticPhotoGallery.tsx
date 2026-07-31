@@ -13,31 +13,24 @@ import {
   Eye,
   Heart
 } from 'lucide-react';
-import hibiscusImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
-import basilicImg from '../assets/images/bendjo_basilic_tea_1785483940225.jpg';
-import citronnelleImg from '../assets/images/bendjo_citronnelle_tea_1785484352457.jpg';
-import laurierImg from '../assets/images/bendjo_laurier_tea_1785484365853.jpg';
-import coffretImg from '../assets/images/bendjo_coffret_prestige_1785484392625.jpg';
+import img01 from '../assets/images/bendjo_authentic_01.webp';
+import img02 from '../assets/images/bendjo_authentic_02.webp';
+import img03 from '../assets/images/bendjo_authentic_03.webp';
+import img04 from '../assets/images/bendjo_authentic_04.webp';
+import img05 from '../assets/images/bendjo_authentic_05.webp';
+import img06 from '../assets/images/bendjo_authentic_06.webp';
+import img07 from '../assets/images/bendjo_authentic_07.webp';
+import img08 from '../assets/images/bendjo_authentic_08.webp';
+import img09 from '../assets/images/bendjo_authentic_09.webp';
+import img10 from '../assets/images/bendjo_authentic_10.webp';
+import img11 from '../assets/images/bendjo_authentic_11.webp';
+import img12 from '../assets/images/bendjo_authentic_12.webp';
+import img13 from '../assets/images/bendjo_authentic_13.webp';
+import img14 from '../assets/images/bendjo_authentic_14.webp';
+import img15 from '../assets/images/bendjo_authentic_15.webp';
 import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
-import standImg from '../assets/images/bendjo_authentic_01.webp';
-import cateringImg from '../assets/images/bendjo_b2b_catering_1785484404621.jpg';
 import heroImg from '../assets/images/hero_authentic.webp';
-
-import authentic01 from '../assets/images/bendjo_authentic_01.webp';
-import authentic02 from '../assets/images/bendjo_authentic_02.webp';
-import authentic03 from '../assets/images/bendjo_authentic_03.webp';
-import authentic04 from '../assets/images/bendjo_authentic_04.webp';
-import authentic05 from '../assets/images/bendjo_authentic_05.webp';
-import authentic06 from '../assets/images/bendjo_authentic_06.webp';
-import authentic07 from '../assets/images/bendjo_authentic_07.webp';
-import authentic08 from '../assets/images/bendjo_authentic_08.webp';
-import authentic09 from '../assets/images/bendjo_authentic_09.webp';
-import authentic10 from '../assets/images/bendjo_authentic_10.webp';
-import authentic11 from '../assets/images/bendjo_authentic_11.webp';
-import authentic12 from '../assets/images/bendjo_authentic_12.webp';
-import authentic13 from '../assets/images/bendjo_authentic_13.webp';
-import authentic14 from '../assets/images/bendjo_authentic_14.webp';
-import authentic15 from '../assets/images/bendjo_authentic_15.webp';
+import logoImg from '../assets/images/logo_authentic.webp';
 
 export interface GalleryImage {
   id: string;
@@ -53,132 +46,87 @@ export interface GalleryImage {
 
 export const AUTHENTIC_GALLERY_IMAGES: GalleryImage[] = [
   {
-    id: 'hero-1',
-    title: 'Bannière Immersion Terroir BenDjo',
+    id: 'g-hero',
+    title: 'Bannière Officielle BenDjo',
     category: 'product',
     categoryLabel: 'Produits',
     src: heroImg,
-    description: 'Présentation officielle de la gamme d\'infusions pures BenDjo et théière traditionnelle.',
+    description: 'Présentation officielle de la gamme d\'infusions pures BenDjo avec théière traditionnelle.',
     details: '100% plantes béninoises séchées sans produits chimiques.',
     badge: 'Image Officielle',
     badgeColor: 'bg-[#D64545] text-white'
   },
   {
-    id: 'founder-1',
+    id: 'g-founder',
     title: 'Bénédicte Lovi — Fondatrice BenDjo',
     category: 'founder',
     categoryLabel: 'Direction & Vision',
     src: founderImg,
     description: 'Portrait authentique de Bénédicte Lovi, créatrice et innovatrice de BenDjo au Bénin.',
-    details: 'Pionnière de l\'agro-alimentaire bio et des tisanes haut de gamme du terroir.',
+    details: 'Pionnière de l\'agro-alimentaire bio et des tisanes haut de gamme du terroir béninois.',
     badge: 'Fondatrice',
     badgeColor: 'bg-[#2D5A36] text-white'
   },
   {
-    id: '1',
-    title: 'Infusion BenDjo Hibiscus (1500 FCFA)',
+    id: 'g-logo',
+    title: 'Logo Officiel BenDjo — Monogramme JB',
+    category: 'founder',
+    categoryLabel: 'Direction & Vision',
+    src: logoImg,
+    description: 'Logo monogramme JB officiel de la marque BenDjo, symbole du terroir béninois.',
+    details: 'Identité visuelle soignée reflétant l\'authenticité et l\'élégance artisanale.',
+    badge: 'Identité Marque',
+    badgeColor: 'bg-[#2D5A36] text-white'
+  },
+  {
+    id: 'g-01',
+    title: 'Infusion Hibiscus BenDjo — Sachet Scellé',
     category: 'product',
     categoryLabel: 'Produits',
-    src: hibiscusImg,
-    description: 'Boîte éco-conçue Kraft avec sachets scellés d\'infusion d\'Hibiscus (Bissap) 100% naturelle.',
-    details: 'Calices d\'hibiscus pur récoltés à la main au Bénin. Couleur pourpre éclatante et goût acidulé.',
-    badge: 'Meilleure Vente',
+    src: img01,
+    description: 'Photo authentique du sachet d\'infusion Hibiscus (Bissap) BenDjo à 1500 FCFA.',
+    details: 'Calices d\'hibiscus récoltés à la main au Bénin. Conditionnement éco-responsable.',
+    badge: 'Hibiscus — Best Seller',
     badgeColor: 'bg-[#D64545] text-white'
   },
   {
-    id: '2',
-    title: 'Infusion BenDjo Basilic (1500 FCFA)',
+    id: 'g-02',
+    title: 'Infusion Basilic BenDjo — Emballage Artisanal',
     category: 'product',
     categoryLabel: 'Produits',
-    src: basilicImg,
-    description: 'Étui Kraft avec touche pastel rose. Feuilles de basilic frais séchées artisanalement.',
-    details: 'Vertus digestives et apaisantes pour le stress. Zéro théine ni caféine.',
-    badge: '100% Bio Local',
+    src: img02,
+    description: 'Étui kraft rosé de l\'infusion Basilic apaisante et digestive BenDjo.',
+    details: 'Feuilles de basilic frais séchées artisanalement. Zéro théine ni caféine.',
+    badge: 'Basilic — 100% Bio',
     badgeColor: 'bg-[#E895A3] text-stone-900'
   },
   {
-    id: '3',
-    title: 'Infusion Citronnelle & Girofle (1500 FCFA)',
+    id: 'g-03',
+    title: 'Infusion Citronnelle & Girofle — Packaging',
     category: 'product',
     categoryLabel: 'Produits',
-    src: citronnelleImg,
-    description: 'Emballage Kraft étiquette jaune dorée. Alliance rafraîchissante de citronnelle et girofle.',
-    details: 'Tonifiant et purifiant naturel, idéal pour les baisses de tonus et réveils difficiles.',
-    badge: 'Formule Tonique',
+    src: img03,
+    description: 'Emballage Kraft doré de l\'infusion Citronnelle & Clou de Girofle BenDjo.',
+    details: 'Alliance tonique vivifiante entre citronnelle et girofle du terroir béninois.',
+    badge: 'Citronnelle — Tonique',
     badgeColor: 'bg-[#E08A2E] text-white'
   },
   {
-    id: '4',
-    title: 'Infusion Feuilles de Laurier (1500 FCFA)',
+    id: 'g-04',
+    title: 'Infusion Feuilles de Laurier — Nouveauté',
     category: 'product',
     categoryLabel: 'Produits',
-    src: laurierImg,
-    description: 'Nouveauté de la gamme BenDjo. Feuilles de laurier béninois soigneusement sélectionnées.',
-    details: 'Effet détoxifiant et soutien de la circulation sanguine.',
-    badge: 'Nouveauté',
+    src: img04,
+    description: 'Nouveauté de la gamme BenDjo : feuilles de laurier béninois soigneusement sélectionnées.',
+    details: 'Effet détoxifiant, soutien de la circulation sanguine. Bientôt disponible.',
+    badge: 'Laurier — Nouveauté',
     badgeColor: 'bg-[#4B7F52] text-white'
   },
   {
-    id: '5',
+    id: 'g-05',
     title: 'Coffret Prestige Dégustation 30 Sachets',
     category: 'product',
     categoryLabel: 'Produits',
-    src: coffretImg,
-    description: 'Coffret cadeau artisanal réunissant les 3 recettes iconiques BenDjo.',
-    details: '30 sachets scellés fraîcheur sous boîte sérigraphiée. Cadeau d\'entreprise privilégié.',
-    badge: 'Coffret Cadeau B2B',
-    badgeColor: 'bg-[#C89B6B] text-white'
-  },
-  {
-    id: 'real-01',
-    title: 'Présentation des Paquets BenDjo',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: authentic01,
-    description: 'Photo authentique des sachets et emballages d\'infusion BenDjo prêts pour la livraison.',
-    details: 'Conditionnement scellé préservant toutes les propriétés organoleptiques des plantes.',
-    badge: 'Photo Réelle',
-    badgeColor: 'bg-emerald-700 text-white'
-  },
-  {
-    id: 'real-02',
-    title: 'Gamme BenDjo & Infusions Préparées',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: authentic02,
-    description: 'Focus sur les emballages authentiques et les tasses d\'infusions naturelles.',
-    details: 'Préparation artisanale sans additifs.',
-    badge: 'Photo Réelle',
-    badgeColor: 'bg-amber-600 text-white'
-  },
-  {
-    id: 'real-03',
-    title: 'Dégustation & Stand BenDjo',
-    category: 'event',
-    categoryLabel: 'Événements',
-    src: authentic03,
-    description: 'Événement de dégustation des thés BenDjo lors des salons et expositions au Bénin.',
-    details: 'Rencontre directe avec les clients et dégustation des recettes chaudes et glacées.',
-    badge: 'Événement',
-    badgeColor: 'bg-blue-600 text-white'
-  },
-  {
-    id: 'real-04',
-    title: 'Stand d\'Exposition & Animation',
-    category: 'event',
-    categoryLabel: 'Événements',
-    src: authentic04,
-    description: 'Stand BenDjo animé par l\'équipe lors d\'une foire locale.',
-    details: 'Mise en valeur du savoir-faire béninois.',
-    badge: 'Forums & Salons',
-    badgeColor: 'bg-blue-600 text-white'
-  },
-  {
-    id: 'real-05',
-    title: 'Conditionnement & Paquets d\'Infusion',
-    category: 'product',
-    categoryLabel: 'Produits',
-    src: authentic05,
     description: 'Vue rapprochée des étuis colorés d\'infusion (1500 FCFA).',
     details: 'Design soigné et protecteur de la fraîcheur.',
     badge: 'Photo Réelle',

@@ -1,7 +1,7 @@
 import { ServiceItem } from '../types';
-import catalogueImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
-import cateringImg from '../assets/images/bendjo_b2b_catering_1785484404621.jpg';
-import standImg from '../assets/images/bendjo_stand_event_1785483952441.jpg';
+import catalogueImg from '../assets/images/bendjo_authentic_06.webp';
+import cateringImg from '../assets/images/bendjo_authentic_07.webp';
+import standImg from '../assets/images/bendjo_authentic_08.webp';
 
 export const BENDJO_SERVICES: ServiceItem[] = [
   {

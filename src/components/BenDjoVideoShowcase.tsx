@@ -17,10 +17,10 @@ import {
   Flame,
   Coffee
 } from 'lucide-react';
-import hibiscusImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
-import basilicImg from '../assets/images/bendjo_basilic_tea_1785483940225.jpg';
-import standImg from '../assets/images/bendjo_stand_event_1785483952441.jpg';
-import founderImg from '../assets/images/bendjo_founder_benedite_1785483963462.jpg';
+import chapter1Img from '../assets/images/bendjo_authentic_09.webp';
+import chapter2Img from '../assets/images/bendjo_authentic_10.webp';
+import chapter3Img from '../assets/images/bendjo_authentic_11.webp';
+import chapter4Img from '../assets/images/bendjo_authentic_12.webp';
 
 interface Chapter {
   id: number;
@@ -39,8 +39,8 @@ const VIDEO_CHAPTERS: Chapter[] = [
     time: 0,
     title: "1. Récolte & Terroir Béninois",
     subtitle: "Sélection manuelle des calices d'hibiscus & basilic frais à Cotonou",
-    image: standImg,
-    accentColor: "#D64545", // Rougehibiscus
+    image: chapter1Img,
+    accentColor: "#D64545",
     badge: "100% Organique",
     quote: "Nos plantes sont cultivées avec passion au cœur des terres fertiles du Bénin."
   },
@@ -49,17 +49,17 @@ const VIDEO_CHAPTERS: Chapter[] = [
     time: 15,
     title: "2. Séchage Artisanal & Sachets Scellés",
     subtitle: "Conservation optimale des arômes dans un packaging éco-conçu",
-    image: basilicImg,
-    accentColor: "#E895A3", // Rosebasilic
+    image: chapter2Img,
+    accentColor: "#E895A3",
     badge: "Sachets Scellés 1500 FCFA",
     quote: "Chaque sachet préserve la fraîcheur originelle des huiles essentielles."
   },
   {
     id: 3,
     time: 30,
-    title: "3. L'Élixir Hibiscus (#D64545) & Basilic (#E895A3)",
+    title: "3. Les Élixirs Naturels BenDjo",
     subtitle: "La magie d'une infusion rouge rubis et d'une tisane apaisante",
-    image: hibiscusImg,
+    image: chapter3Img,
     accentColor: "#D64545",
     badge: "Antioxydants & Vitamines",
     quote: "Une robe éclatante, un arôme authentique et des vertus revitalisantes uniques."
@@ -69,7 +69,7 @@ const VIDEO_CHAPTERS: Chapter[] = [
     time: 45,
     title: "4. Service Petit-Déjeuner Corporate & B2B",
     subtitle: "Restauration saine et pauses thé équilibrées pour les entreprises",
-    image: founderImg,
+    image: chapter4Img,
     accentColor: "#2D5A36",
     badge: "50+ Entreprises Partenaires",
     quote: "BenDjo transforme les réunions de travail en instants de sérénité et de vitalité."

@@ -1,9 +1,9 @@
 import { Product } from '../types';
-import hibiscusImg from '../assets/images/bendjo_hibiscus_tea_1785483925996.jpg';
-import basilicImg from '../assets/images/bendjo_basilic_tea_1785483940225.jpg';
-import citronnelleImg from '../assets/images/bendjo_citronnelle_tea_1785484352457.jpg';
-import laurierImg from '../assets/images/bendjo_laurier_tea_1785484365853.jpg';
-import coffretImg from '../assets/images/bendjo_coffret_prestige_1785484392625.jpg';
+import hibiscusImg from '../assets/images/bendjo_authentic_01.webp';
+import basilicImg from '../assets/images/bendjo_authentic_02.webp';
+import citronnelleImg from '../assets/images/bendjo_authentic_03.webp';
+import laurierImg from '../assets/images/bendjo_authentic_04.webp';
+import coffretImg from '../assets/images/bendjo_authentic_05.webp';
 
 export const BENDJO_PRODUCTS: Product[] = [
   {
