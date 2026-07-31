@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /api/
 
-Sitemap: https://bendjo.com/sitemap.xml
+Sitemap: https://bendjo-mu.vercel.app/sitemap.xml
