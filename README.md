@@ -51,6 +51,17 @@ Situé **tout en bas du pied de page (Footer)** sous l'intitulé **« Espace Adm
 
 ---
 
+## 🔍 Optimisation SEO & Référencement Naturel (Google)
+
+Le site intègre les meilleures pratiques de référencement naturel pour garantir un classement optimal sur Google, particulièrement sur la recherche locale à Cotonou et au Bénin :
+
+* **Données Structurées Schema.org (JSON-LD)** : Balisage complet intégrant les entités `LocalBusiness`, `Store`, `Product` (catalogue d'infusions avec prix en FCFA) et `FAQPage` pour faire apparaître les Rich Snippets et FAQ directement dans les résultats Google.
+* **Méta-Balises Avancées & Géolocalisation** : Balises Open Graph pour des partages parfaits sur WhatsApp/Facebook, Twitter Cards et balises géo-référencées ciblées sur Cotonou et le Bénin (`geo.region: BJ-OU`, `geo.position: 6.3654;2.4183`).
+* **Fichiers d'Indexation** : Présence d'un fichier `robots.txt` et d'un plan du site `sitemap.xml` prêts pour la Google Search Console.
+* **Mots-clés Stratégiques** : Optimisation sur les requêtes à forte intention (*"thé Bénin"*, *"infusion naturelle Cotonou"*, *"petit déjeuner entreprise Cotonou"*, *"tisane basilic bénin"*, *"bissap pourpre"*).
+
+---
+
 ## 🛠️ Stack Technique
 
 * **Framework** : React 18 avec TypeScript
