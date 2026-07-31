@@ -1,0 +1,6 @@
+{
+  "name": "BenDjo — Infusions Naturelles & Restauration",
+  "description": "Plateforme vitrine et catalogue d'infusions artisanales 100% béninoises avec commande WhatsApp et services de petit-déjeuner en entreprise à Cotonou.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

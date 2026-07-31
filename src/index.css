@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('https://fonts.cdnfonts.com/s/72836/BrittanySignature.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/72836/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@utility font-brittany {
+  font-family: 'Brittany Signature', 'Alex Brush', 'Great Vibes', 'Caveat', cursive;
+}
+
+@utility font-signature {
+  font-family: 'Brittany Signature', 'Alex Brush', 'Great Vibes', 'Caveat', cursive;
+}
+
+@layer base {
+  :root {
+    --bg-creme: #FAF6F0;
+    --bg-kraft: #C89B6B;
+    --green-leaf: #4B7F52;
+    --green-forest: #2D5A36;
+    --red-hibiscus: #D64545;
+    --orange-citronnelle: #E08A2E;
+    --rose-basilic: #E895A3;
+    --brown-dark: #3D271D;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF6F0;
+    color: #1F2421;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Sora', 'Manrope', sans-serif;
+  }
+
+  .font-brittany, .font-signature {
+    font-family: 'Brittany Signature', 'Alex Brush', 'Great Vibes', 'Caveat', cursive;
+  }
+}
+
+/* Custom scrollbar for organic feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89B6B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4B7F52;
+}
+
+/* Glassmorphism soft glow */
+.glass-panel {
+  background: rgba(250, 246, 240, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 155, 107, 0.18);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(200, 155, 107, 0.15);
+}
+
+/* Custom organic grain background overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(45, 90, 54, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
