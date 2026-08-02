@@ -87,10 +87,10 @@ export const Header: React.FC<HeaderProps> = ({
                   Ben<span className="text-[#D96123]">Djo</span>
                 </span>
                 <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-xs sm:text-xs text-[#2D5A36] font-extrabold tracking-wider uppercase block text-[10px]">
+                  <span className="text-[9px] sm:text-xs text-[#2D5A36] font-extrabold tracking-wider uppercase block">
                     THÉ NATUREL
                   </span>
-                  <span className="font-brittany text-sm sm:text-base text-[#D96123] font-normal leading-none ml-0.5">
+                  <span className="font-brittany text-xs sm:text-base text-[#D96123] font-normal leading-none ml-0.5">
                     — Un Pur Régal
                   </span>
                 </div>

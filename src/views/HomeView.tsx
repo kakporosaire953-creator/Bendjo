@@ -81,12 +81,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
               transition={{ duration: 0.6 }}
               className="lg:col-span-7 space-y-6 text-center lg:text-left"
             >
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white border border-[#2D5A36]/20 shadow-xs">
-                <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#2D5A36] animate-pulse shrink-0" />
-                <span className="text-[10px] sm:text-xs font-extrabold text-[#2D5A36] uppercase tracking-wider whitespace-nowrap">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white border border-[#2D5A36]/20 shadow-xs mb-2">
+                <span className="w-1.5 sm:w-2.5 h-1.5 sm:h-2.5 rounded-full bg-[#2D5A36] animate-pulse shrink-0" />
+                <span className="text-[9px] sm:text-xs font-extrabold text-[#2D5A36] uppercase tracking-wider whitespace-nowrap">
                   100% Naturel Béninois
                 </span>
-                <span className="font-brittany text-base sm:text-xl text-[#D96123] font-normal leading-none ml-0.5 sm:ml-1 whitespace-nowrap">
+                <span className="font-brittany text-xs sm:text-xl text-[#D96123] font-normal leading-none whitespace-nowrap">
                   — Un Pur Régal
                 </span>
               </div>
@@ -259,49 +259,49 @@ export const HomeView: React.FC<HomeViewProps> = ({
           viewport={{ once: true, margin: '-50px' }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
-          <div className="relative rounded-3xl bg-gradient-to-r from-[#1C261D] via-[#233325] to-[#1C261D] text-white p-8 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
+          <div className="relative rounded-3xl bg-gradient-to-r from-[#1C261D] via-[#233325] to-[#1C261D] text-white p-6 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#D96123]/20 rounded-full blur-3xl pointer-events-none" />
             
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-4 text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 border border-emerald-400/30 text-emerald-200 text-xs font-bold uppercase tracking-wider">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
-                  <span>Module Interactif Santé & Routine Personnalisée</span>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+              <div className="lg:col-span-8 space-y-3 sm:space-y-4 text-center lg:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 border border-emerald-400/30 text-emerald-200 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+                  <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+                  <span className="leading-tight">Module Interactif Santé</span>
                 </div>
 
-                <h2 className="font-heading font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+                <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-4xl text-white leading-tight">
                   Quel est le meilleur thé BenDjo pour votre santé ?
                 </h2>
 
-                <p className="text-sm sm:text-base text-emerald-100/90 leading-relaxed max-w-2xl">
+                <p className="text-xs sm:text-sm lg:text-base text-emerald-100/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Faites notre <strong>Quiz Diagnostic Bien-Être en 4 étapes</strong>. Identifiez en 1 minute la synergie de tisanes béninoises idéale pour votre <strong>hypertension, digestion, sommeil, tonus ou détox</strong>.
                 </p>
 
-                <div className="pt-2 flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="pt-2 flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
                   <motion.button
                     whileHover={{ scale: 1.04 }}
                     whileTap={{ scale: 0.96 }}
                     onClick={onOpenQuiz}
                     id="home-quiz-banner-btn"
-                    className="px-7 py-3.5 rounded-full bg-[#D96123] hover:bg-[#c4531b] text-white font-extrabold text-sm shadow-lg flex items-center gap-2.5 transition-all"
+                    className="px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#D96123] hover:bg-[#c4531b] text-white font-extrabold text-xs sm:text-sm shadow-lg flex items-center gap-2 sm:gap-2.5 transition-all"
                   >
-                    <Sparkles className="w-4 h-4 text-amber-200" />
-                    <span>Lancer le Quiz Diagnostic Gratuit</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-200" />
+                    <span>Lancer le Quiz Gratuit</span>
+                    <ArrowRight className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                   </motion.button>
                 </div>
               </div>
 
               <div className="lg:col-span-4 flex justify-center">
-                <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center space-y-3 max-w-xs">
-                  <div className="w-12 h-12 rounded-2xl bg-amber-400/20 text-amber-300 flex items-center justify-center mx-auto">
-                    <ShieldCheck className="w-6 h-6" />
+                <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center space-y-2 sm:space-y-3 max-w-xs">
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-amber-400/20 text-amber-300 flex items-center justify-center mx-auto">
+                    <ShieldCheck className="w-5 sm:w-6 h-5 sm:h-6" />
                   </div>
-                  <div className="font-heading font-extrabold text-base text-white">
+                  <div className="font-heading font-extrabold text-sm sm:text-base text-white">
                     Diagnostic Certifié
                   </div>
-                  <p className="text-xs text-emerald-200/90">
+                  <p className="text-[10px] sm:text-xs text-emerald-200/90 leading-relaxed">
                     Basé sur les propriétés médicinales traditionnelles de l'Hibiscus, du Basilic, de la Citronnelle et du Laurier du Bénin.
                   </p>
                 </div>

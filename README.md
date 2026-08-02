@@ -40,14 +40,33 @@ La plateforme web **BenDjo** a été conçue pour offrir une navigation fluide, 
 
 ## 🔐 Panel d'Administration (Espace Gestion Produits)
 
-### ⚠️ Emplacement & Importance Stratégique pour BenDjo
-Situé **tout en bas du pied de page (Footer)** sous l'intitulé **« Espace Admin • Gestion Produits »**, le **Panel d'Administration** est un outil vital pour le pilotage opérationnel de l'entreprise.
+### 🔒 Accès Sécurisé
 
-### 💡 Fonctionnalités du Panel Admin :
+Pour des raisons de sécurité, le panel d'administration **n'est pas accessible via un bouton visible** sur le site. Deux méthodes discrètes ont été implémentées :
+
+**💻 Sur Desktop (Ordinateur) :**
+- Tapez au clavier le code secret : **`admin2026`**
+- Le panel s'ouvre automatiquement (pas besoin d'Entrée)
+- Fonctionne sur toutes les pages du site
+
+**📱 Sur Mobile (Smartphone/Tablette) :**
+- **Triple-tap rapide** dans le coin **en bas à droite** de l'écran
+- Les 3 taps doivent être faits en moins d'1 seconde
+- Zone de détection : 20% largeur × 20% hauteur (coin bas-droit)
+
+**📄 Documentation complète :** Voir le fichier `ACCES-ADMIN.md` pour tous les détails techniques d'implémentation.
+
+---
+
+### 💡 Fonctionnalités du Panel Admin
+
 * **Gestion du Catalogue en Temps Réel** : Ajout instantané de nouvelles créations d'infusions, modification des tarifs (FCFA), ajustement des descriptions et formats.
-* **Upload Médias & Visuels** : Possibilité d'associer des visuels ou vidéos (JPG, PNG, MP4) pour chaque produit.
-* **Sécurité & Accès Simplifié** : Protégé par un code PIN confidentiel dédié à l'équipe commerciale et de gestion BenDjo.
+* **Upload Médias & Visuels** : Possibilité d'associer des visuels ou vidéos (JPG, PNG, WebP, MP4) pour chaque produit.
+* **Catégorisation Avancée** : Organisation par type (Infusions individuelles, Coffrets Prestige, Nouveautés).
 * **Réinitialisation du Catalogue** : Option de réinitialisation sécurisée avec confirmation intégrée pour restaurer la sélection d'origine.
+* **Interface Intuitive** : Design moderne avec formulaires guidés et prévisualisation instantanée.
+
+**⚠️ Important :** Ces méthodes d'accès sont confidentielles et réservées à l'équipe de gestion BenDjo.
 
 ---
 
