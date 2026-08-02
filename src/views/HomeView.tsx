@@ -193,33 +193,33 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     alt="BenDjo Infusions Naturelles Bénin"
                     className="w-full h-[380px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                   {/* Floating Price Tag Pill */}
                   <motion.div
                     animate={{ y: [0, -6, 0] }}
                     transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
-                    className="absolute top-4 right-4 bg-[#D96123] text-white px-4 py-2 rounded-2xl font-heading font-extrabold text-sm shadow-xl border border-white/30 flex items-center gap-1.5"
+                    className="absolute top-4 right-4 bg-[#D96123] text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl font-heading font-extrabold text-xs sm:text-sm shadow-xl border border-white/30 flex items-center gap-1.5"
                   >
-                    <Flame className="w-4 h-4 text-amber-200 fill-current" />
+                    <Flame className="w-3 h-3 sm:w-4 sm:h-4 text-amber-200 fill-current" />
                     <span>1500 FCFA</span>
                   </motion.div>
 
                   {/* Floating Footer Card on Image */}
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-xl space-y-1">
+                  <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-white/98 border border-stone-200 shadow-xl space-y-0.5 sm:space-y-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-extrabold text-[#D96123] uppercase tracking-wider">
+                      <span className="text-[9px] sm:text-[10px] font-extrabold text-[#D96123] uppercase tracking-wider">
                         Les Saveurs Principales
                       </span>
                       <div className="flex items-center gap-1 text-[#2D5A36]">
-                        <Star className="w-3.5 h-3.5 fill-current text-amber-500" />
-                        <span className="text-xs font-bold">Avis Clients 5/5</span>
+                        <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current text-amber-500" />
+                        <span className="text-[10px] sm:text-xs font-bold">Avis 5/5</span>
                       </div>
                     </div>
-                    <div className="font-heading font-extrabold text-sm text-[#1F2421]">
+                    <div className="font-heading font-extrabold text-xs sm:text-sm text-[#1F2421]">
                       Basilic • Hibiscus • Citronnelle & Girofle
                     </div>
-                    <p className="text-[11px] text-stone-600">
+                    <p className="text-[10px] sm:text-[11px] text-stone-600 hidden sm:block">
                       Boîte de 12 sachets de 2g (24g) • Reconnectez-vous à vos origines
                     </p>
                   </div>
@@ -230,7 +230,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={onOpenBrewTimer}
-                  className="absolute -top-4 -left-2 sm:-left-4 p-3.5 rounded-2xl bg-white border-2 border-[#D96123]/30 shadow-2xl text-left flex items-center gap-3"
+                  className="hidden sm:flex absolute -top-4 -left-2 sm:-left-4 p-3.5 rounded-2xl bg-white border-2 border-[#D96123]/30 shadow-2xl text-left items-center gap-3"
                 >
                   <div className="w-9 h-9 rounded-xl bg-[#2D5A36] text-white flex items-center justify-center shrink-0">
                     <Clock className="w-4 h-4 animate-pulse text-[#D96123]" />
