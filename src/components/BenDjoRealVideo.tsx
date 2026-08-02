@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Pause } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 
 interface BenDjoRealVideoProps {
   videoSrc: string;
@@ -16,6 +16,7 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
   className = ''
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -28,6 +29,12 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
       videoRef.current.play();
     }
     setIsPlaying(!isPlaying);
+  };
+
+  const toggleMute = () => {
+    if (!videoRef.current) return;
+    videoRef.current.muted = !isMuted;
+    setIsMuted(!isMuted);
   };
 
   const handleLoadedData = () => {
@@ -62,30 +69,48 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
         muted
         playsInline
         preload="none"
+        controls
+        controlsList="nodownload"
         onLoadedData={handleLoadedData}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
         className="w-full h-full object-cover"
         style={{ minHeight: '300px', maxHeight: '600px' }}
       />
       
-      {/* Overlay + Bouton Play/Pause */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
       
       {!isLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/60 pointer-events-none">
           <div className="text-white text-sm">Chargement...</div>
         </div>
       )}
 
-      <button
-        onClick={togglePlay}
-        className="absolute bottom-4 right-4 z-20 w-14 h-14 rounded-full bg-white/90 hover:bg-white text-[#2D5A36] flex items-center justify-center shadow-xl transition-all hover:scale-110"
-      >
-        {isPlaying ? (
-          <Pause className="w-6 h-6 fill-current" />
-        ) : (
-          <Play className="w-6 h-6 fill-current ml-1" />
-        )}
-      </button>
+      {/* Boutons personnalisés (optionnels) */}
+      <div className="absolute bottom-4 right-4 z-20 flex gap-2">
+        <button
+          onClick={toggleMute}
+          className="w-12 h-12 rounded-full bg-white/90 hover:bg-white text-[#2D5A36] flex items-center justify-center shadow-xl transition-all hover:scale-110"
+        >
+          {isMuted ? (
+            <VolumeX className="w-5 h-5" />
+          ) : (
+            <Volume2 className="w-5 h-5" />
+          )}
+        </button>
+        
+        <button
+          onClick={togglePlay}
+          className="w-14 h-14 rounded-full bg-white/90 hover:bg-white text-[#2D5A36] flex items-center justify-center shadow-xl transition-all hover:scale-110"
+        >
+          {isPlaying ? (
+            <Pause className="w-6 h-6 fill-current" />
+          ) : (
+            <Play className="w-6 h-6 fill-current ml-1" />
+          )}
+        </button>
+      </div>
     </motion.div>
   );
 };
