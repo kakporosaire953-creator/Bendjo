@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PageView, Product } from '../types';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 import { MediaDisplay } from '../components/MediaDisplay';
-import { BenDjoVideoShowcase } from '../components/BenDjoVideoShowcase';
+import { BenDjoRealVideo } from '../components/BenDjoRealVideo';
 import { motion } from 'framer-motion';
 import {
   Leaf,
@@ -130,7 +130,22 @@ export const InfusionsView: React.FC<InfusionsViewProps> = ({
         </section>
 
         {/* 2. VIDÉO BEN DJO - IDENTITÉ VISUELLE & GALERIE DES INFUSIONS */}
-        <BenDjoVideoShowcase onOpenBrewTimer={onOpenBrewTimer} />
+        <section className="space-y-6">
+          <div className="text-center space-y-2 max-w-2xl mx-auto">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96123]">
+              Découverte Visuelle
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-[#1F2421]">
+              Nos Infusions en Action
+            </h2>
+          </div>
+          
+          <BenDjoRealVideo
+            videoSrc="/videos/video1.mp4"
+            title="Le Processus Artisanal BenDjo"
+            subtitle="De la plante fraîche au sachet parfaitement dosé"
+          />
+        </section>
 
         {/* 2. CATALOGUE PRODUITS */}
         <section className="space-y-8">

@@ -4,7 +4,7 @@ import { BENDJO_SERVICES } from '../data/services';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 import { FaqSection } from '../components/FaqSection';
 import { MediaDisplay } from '../components/MediaDisplay';
-import { BenDjoVideoShowcase } from '../components/BenDjoVideoShowcase';
+import { BenDjoRealVideo } from '../components/BenDjoRealVideo';
 import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
 import heroBannerImg from '../assets/images/hero_authentic.webp';
 import importantImg1 from '../assets/images/important_authentic_1.webp';
@@ -681,9 +681,39 @@ export const HomeView: React.FC<HomeViewProps> = ({
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-50px' }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8"
       >
-        <BenDjoVideoShowcase onOpenBrewTimer={onOpenBrewTimer} />
+        <div className="text-center space-y-3 max-w-3xl mx-auto">
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96123]">
+            Immersion Vidéo • Découvrez BenDjo
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#1F2421]">
+            L'Art des Infusions Béninoises en Images
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <BenDjoRealVideo
+            videoSrc="/videos/video1.mp4"
+            title="Notre Savoir-Faire"
+            subtitle="De la récolte à votre tasse"
+          />
+          
+          <BenDjoRealVideo
+            videoSrc="/videos/video2.mp4"
+            title="Processus Artisanal"
+            subtitle="Séchage traditionnel & conditionnement"
+          />
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <BenDjoRealVideo
+            videoSrc="/videos/video3.mp4"
+            title="Les Infusions BenDjo"
+            subtitle="Basilic • Hibiscus • Citronnelle & Girofle"
+            className="lg:h-[500px]"
+          />
+        </div>
       </motion.section>
 
       {/* 6. INTERACTIVE FAQ SECTION */}
