@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Play, Pause } from 'lucide-react';
 
 interface BenDjoRealVideoProps {
   videoSrc: string;
@@ -14,6 +15,25 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
   subtitle,
   className = ''
 }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleLoadedData = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -36,17 +56,36 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
       )}
       
       <video
+        ref={videoRef}
         src={videoSrc}
-        autoPlay
         loop
         muted
         playsInline
-        preload="metadata"
+        preload="none"
+        onLoadedData={handleLoadedData}
         className="w-full h-full object-cover"
         style={{ minHeight: '300px', maxHeight: '600px' }}
       />
       
+      {/* Overlay + Bouton Play/Pause */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+      
+      {!isLoaded && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+          <div className="text-white text-sm">Chargement...</div>
+        </div>
+      )}
+
+      <button
+        onClick={togglePlay}
+        className="absolute bottom-4 right-4 z-20 w-14 h-14 rounded-full bg-white/90 hover:bg-white text-[#2D5A36] flex items-center justify-center shadow-xl transition-all hover:scale-110"
+      >
+        {isPlaying ? (
+          <Pause className="w-6 h-6 fill-current" />
+        ) : (
+          <Play className="w-6 h-6 fill-current ml-1" />
+        )}
+      </button>
     </motion.div>
   );
 };

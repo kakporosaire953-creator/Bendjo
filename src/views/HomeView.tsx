@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageView, Product } from '../types';
 import { BENDJO_SERVICES } from '../data/services';
-import { TestimonialsSection } from '../components/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import { FaqSection } from '../components/FaqSection';
 import { MediaDisplay } from '../components/MediaDisplay';
 import { BenDjoRealVideo } from '../components/BenDjoRealVideo';
@@ -735,7 +735,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         viewport={{ once: true, margin: '-50px' }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <TestimonialsSection />
+        <TestimonialsCarousel />
       </motion.section>
 
       {/* 7. BLOC DE RÉASSURANCE BENDJO */}

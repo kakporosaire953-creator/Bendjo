@@ -5,10 +5,9 @@ import bendjoMonogramLogo from '../assets/images/logo_authentic.webp';
 
 interface FooterProps {
   setCurrentView: (view: PageView) => void;
-  onOpenAdminModal?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal }) => {
+export const Footer: React.FC<FooterProps> = ({ setCurrentView }) => {
   return (
     <footer className="bg-[#1C261D] text-[#FAF6F0] pt-16 pb-12 border-t-2 border-[#D96123]/30 relative overflow-hidden">
       {/* Background ambient lighting accents */}
@@ -151,10 +150,10 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
             </ul>
           </div>
 
-          {/* Coordonnées, Réseaux & Admin Panel Button */}
+          {/* Coordonnées & Réseaux Sociaux */}
           <div className="space-y-3">
             <h4 className="text-sm font-extrabold uppercase tracking-widest text-[#D96123]">
-              Contacts & Admin
+              Contacts
             </h4>
             <ul className="space-y-2 text-sm text-stone-300">
               <li className="flex items-start gap-2">
@@ -171,18 +170,8 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, onOpenAdminModal
               </li>
             </ul>
 
-            {/* Admin Panel Button & Social Links */}
+            {/* Social Links */}
             <div className="pt-2 space-y-3">
-              {onOpenAdminModal && (
-                <button
-                  onClick={onOpenAdminModal}
-                  className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-[#D96123] text-amber-100 hover:text-white border border-white/20 transition-all text-xs font-bold shadow-xs cursor-pointer"
-                >
-                  <Lock className="w-3.5 h-3.5 text-amber-200" />
-                  <span>Espace Admin • Gestion Produits</span>
-                </button>
-              )}
-
               <div className="space-y-1.5 pt-1">
                 <span className="text-xs font-bold text-stone-300 block uppercase tracking-wider">
                   Suivez-nous :

@@ -24,6 +24,27 @@ export default function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentView]);
+
+  // Système d'accès admin sécurisé par combinaison de touches
+  useEffect(() => {
+    let keySequence = '';
+    const secretCode = 'admin2026'; // Code secret pour accéder à l'admin
+
+    const handleKeyPress = (e: KeyboardEvent) => {
+      keySequence += e.key.toLowerCase();
+      if (keySequence.length > secretCode.length) {
+        keySequence = keySequence.slice(-secretCode.length);
+      }
+      if (keySequence === secretCode) {
+        setIsAdminModalOpen(true);
+        keySequence = '';
+      }
+    };
+
+    window.addEventListener('keypress', handleKeyPress);
+    return () => window.removeEventListener('keypress', handleKeyPress);
+  }, []);
+
   const [products, setProducts] = useState<Product[]>(() => {
     const saved = localStorage.getItem('bendjo_products_v2');
     if (saved) {
@@ -154,7 +175,6 @@ export default function App() {
       {/* Footer */}
       <Footer
         setCurrentView={setCurrentView}
-        onOpenAdminModal={() => setIsAdminModalOpen(true)}
       />
 
       {/* Cart Slide-over Drawer */}

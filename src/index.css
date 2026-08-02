@@ -43,6 +43,33 @@
     color: #1F2421;
   }
 
+  /* Optimisation des marges et padding pour un meilleur alignement */
+  .max-w-7xl {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Padding responsive optimisé */
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:px-8 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   h1, h2, h3, .font-heading {
     font-family: 'Sora', 'Manrope', sans-serif;
   }
@@ -129,6 +156,23 @@ table, pre, code {
   /* RESET des règles de police pour mobile */
   body {
     font-size: 14px !important;
+  }
+
+  /* Optimisation des marges latérales sur mobile */
+  .px-4 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .max-w-7xl {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* Meilleur alignement et centrage */
+  .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   h1 {
