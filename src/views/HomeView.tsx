@@ -93,9 +93,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-chic font-bold text-[#1F2421] leading-[1.15] tracking-tight">
                 Le thé qui vous{' '}
-                <span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#D96123] via-[#9E5128] to-[#2D5A36]">
-                  reconnecte à vos origines
-                </span>
+                <span className="text-[#D96123] font-semibold">reconnecte à vos</span>{' '}
+                <span className="italic font-normal">origines</span>
               </h1>
 
               <p className="text-base sm:text-lg text-stone-700 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">

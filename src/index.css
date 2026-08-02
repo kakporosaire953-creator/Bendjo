@@ -41,10 +41,46 @@
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     background-color: #FAF6F0;
     color: #1F2421;
+    font-size: 16px;
   }
 
   h1, h2, h3, .font-heading {
     font-family: 'Sora', 'Manrope', sans-serif;
+  }
+
+  /* Augmentation globale des tailles de police pour meilleure lisibilité */
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+  }
+
+  p, .text-sm {
+    font-size: 1rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.875rem !important;
+  }
+
+  .text-base {
+    font-size: 1.125rem !important;
+  }
+
+  .text-lg {
+    font-size: 1.25rem !important;
+  }
+
+  @media (min-width: 640px) {
+    h2 {
+      font-size: 2.5rem !important;
+    }
+
+    h3 {
+      font-size: 1.75rem !important;
+    }
   }
 
   .font-brittany, .font-signature {
