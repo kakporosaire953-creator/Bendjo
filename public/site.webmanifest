@@ -1,0 +1,21 @@
+{
+  "name": "BenDjo - Infusions Naturelles du Bénin",
+  "short_name": "BenDjo",
+  "description": "Infusions et tisanes 100% naturelles du terroir béninois. Basilic, Hibiscus, Citronnelle & Girofle.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FAF6F0",
+  "background_color": "#FAF6F0",
+  "display": "standalone",
+  "start_url": "/"
+}

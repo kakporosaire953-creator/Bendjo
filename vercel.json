@@ -36,6 +36,10 @@
       "destination": "/favicon.png"
     },
     {
+      "source": "/site.webmanifest",
+      "destination": "/site.webmanifest"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

@@ -20,15 +20,15 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6 }}
-      className={`relative rounded-3xl overflow-hidden shadow-2xl border-2 border-[#2D5A36]/30 ${className}`}
+      className={`relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 border-[#2D5A36]/30 bg-black ${className}`}
     >
       {title && (
-        <div className="absolute top-4 left-4 right-4 z-10 bg-black/60 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-          <h3 className="font-heading font-extrabold text-lg text-white">
+        <div className="absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4 z-10 bg-black/70 backdrop-blur-none rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+          <h3 className="font-heading font-extrabold text-base sm:text-lg text-white leading-tight">
             {title}
           </h3>
           {subtitle && (
-            <p className="text-sm text-stone-200 mt-1">
+            <p className="text-xs sm:text-sm text-stone-200 mt-1 leading-snug">
               {subtitle}
             </p>
           )}
@@ -41,11 +41,12 @@ export const BenDjoRealVideo: React.FC<BenDjoRealVideoProps> = ({
         loop
         muted
         playsInline
+        preload="metadata"
         className="w-full h-full object-cover"
-        style={{ minHeight: '400px' }}
+        style={{ minHeight: '300px', maxHeight: '600px' }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
     </motion.div>
   );
 };
