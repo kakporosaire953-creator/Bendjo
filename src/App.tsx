@@ -25,11 +25,14 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentView]);
 
-  // Système d'accès admin sécurisé par combinaison de touches
+  // Système d'accès admin sécurisé - Desktop: clavier, Mobile: triple-tap
   useEffect(() => {
     let keySequence = '';
-    const secretCode = 'admin2026'; // Code secret pour accéder à l'admin
+    const secretCode = 'admin2026';
+    let tapCount = 0;
+    let tapTimer: NodeJS.Timeout;
 
+    // Desktop: détection par clavier
     const handleKeyPress = (e: KeyboardEvent) => {
       keySequence += e.key.toLowerCase();
       if (keySequence.length > secretCode.length) {
@@ -41,8 +44,40 @@ export default function App() {
       }
     };
 
+    // Mobile: détection par triple-tap en bas à droite
+    const handleTouchEnd = (e: TouchEvent) => {
+      const touch = e.changedTouches[0];
+      const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
+      
+      // Zone de tap: 20% en bas à droite de l'écran
+      const isInBottomRight = 
+        touch.clientY > windowHeight * 0.8 && 
+        touch.clientX > windowWidth * 0.8;
+
+      if (isInBottomRight) {
+        tapCount++;
+        clearTimeout(tapTimer);
+        
+        if (tapCount === 3) {
+          setIsAdminModalOpen(true);
+          tapCount = 0;
+        }
+        
+        tapTimer = setTimeout(() => {
+          tapCount = 0;
+        }, 1000);
+      }
+    };
+
     window.addEventListener('keypress', handleKeyPress);
-    return () => window.removeEventListener('keypress', handleKeyPress);
+    window.addEventListener('touchend', handleTouchEnd);
+    
+    return () => {
+      window.removeEventListener('keypress', handleKeyPress);
+      window.removeEventListener('touchend', handleTouchEnd);
+      clearTimeout(tapTimer);
+    };
   }, []);
 
   const [products, setProducts] = useState<Product[]>(() => {
