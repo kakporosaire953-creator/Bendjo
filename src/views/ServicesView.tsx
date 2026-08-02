@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageView, ServiceItem } from '../types';
 import { BENDJO_SERVICES } from '../data/services';
-import { TestimonialsSection } from '../components/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import { motion } from 'motion/react';
 import {
   CheckCircle,
@@ -198,7 +198,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
         ))}
 
         {/* Témoignages clients authentiques */}
-        <TestimonialsSection />
+        <TestimonialsCarousel variant="minimal" />
       </div>
     </div>
   );

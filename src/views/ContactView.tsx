@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PageView, ContactFormData } from '../types';
-import { TestimonialsSection } from '../components/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import { motion } from 'motion/react';
 import {
   Mail,
@@ -356,7 +356,7 @@ export const ContactView: React.FC<ContactViewProps> = () => {
         </div>
 
         {/* Témoignages clients authentiques */}
-        <TestimonialsSection />
+        <TestimonialsCarousel variant="side" />
       </div>
     </div>
   );

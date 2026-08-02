@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageView } from '../types';
-import { TestimonialsSection } from '../components/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import founderImg from '../assets/images/benedicte_lovi_authentic.webp';
 import standImg from '../assets/images/bendjo_authentic_01.webp';
 import { motion } from 'framer-motion';
@@ -252,7 +252,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ setCurrentView }) => {
         </section>
 
         {/* 5. TÉMOIGNAGES CLIENTS ANONYMES */}
-        <TestimonialsSection />
+        <TestimonialsCarousel variant="side" />
 
         {/* CTA towards Services */}
         <div className="p-8 rounded-3xl bg-[#FFF7ED] border border-[#EA580C]/30 flex flex-col md:flex-row items-center justify-between gap-6">

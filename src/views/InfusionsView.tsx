@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PageView, Product } from '../types';
-import { TestimonialsSection } from '../components/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import { MediaDisplay } from '../components/MediaDisplay';
 import { BenDjoRealVideo } from '../components/BenDjoRealVideo';
 import { motion } from 'framer-motion';
@@ -294,7 +294,7 @@ export const InfusionsView: React.FC<InfusionsViewProps> = ({
         </section>
 
         {/* Témoignages clients authentiques */}
-        <TestimonialsSection />
+        <TestimonialsCarousel variant="compact" />
       </div>
     </div>
   );
