@@ -266,17 +266,17 @@ export const HomeView: React.FC<HomeViewProps> = ({
             
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
               <div className="lg:col-span-8 space-y-3 sm:space-y-4 text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 border border-emerald-400/30 text-emerald-200 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
-                  <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D96123]/10 border border-[#D96123]/30 text-[#D96123] text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+                  <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#D96123] animate-spin" style={{ animationDuration: '6s' }} />
                   <span className="leading-tight">Module Interactif Santé</span>
                 </div>
 
-                <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-4xl text-white leading-tight">
-                  Quel est le meilleur thé BenDjo pour votre santé ?
+                <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-4xl text-[#1F2421] leading-tight">
+                  Quel est le meilleur <span className="text-[#D96123]">thé BenDjo</span> pour votre santé ?
                 </h2>
 
-                <p className="text-xs sm:text-sm lg:text-base text-emerald-100/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Faites notre <strong>Quiz Diagnostic Bien-Être en 4 étapes</strong>. Identifiez en 1 minute la synergie de tisanes béninoises idéale pour votre <strong>hypertension, digestion, sommeil, tonus ou détox</strong>.
+                <p className="text-xs sm:text-sm lg:text-base text-[#1F2421] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Faites notre <strong className="text-[#D96123]">Quiz Diagnostic Bien-Être en 4 étapes</strong>. Identifiez en 1 minute la synergie de tisanes béninoises idéale pour votre <strong className="text-[#D96123]">hypertension, digestion, sommeil, tonus ou détox</strong>.
                 </p>
 
                 <div className="pt-2 flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
@@ -295,14 +295,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
 
               <div className="lg:col-span-4 flex justify-center">
-                <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center space-y-2 sm:space-y-3 max-w-xs">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-amber-400/20 text-amber-300 flex items-center justify-center mx-auto">
+                <div className="p-4 sm:p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-[#D96123]/20 text-center space-y-2 sm:space-y-3 max-w-xs">
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-[#D96123]/20 text-[#D96123] flex items-center justify-center mx-auto">
                     <ShieldCheck className="w-5 sm:w-6 h-5 sm:h-6" />
                   </div>
-                  <div className="font-heading font-extrabold text-sm sm:text-base text-white">
+                  <div className="font-heading font-extrabold text-sm sm:text-base text-[#1F2421]">
                     Diagnostic Certifié
                   </div>
-                  <p className="text-[10px] sm:text-xs text-emerald-200/90 leading-relaxed">
+                  <p className="text-[10px] sm:text-xs text-stone-700 leading-relaxed">
                     Basé sur les propriétés médicinales traditionnelles de l'Hibiscus, du Basilic, de la Citronnelle et du Laurier du Bénin.
                   </p>
                 </div>
