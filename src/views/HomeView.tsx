@@ -257,9 +257,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-50px' }}
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          className="bg-gradient-to-b from-[#FAF6F0] via-[#FFF8F0] to-[#FAF6F0] py-8 sm:py-12"
         >
-          <div className="relative rounded-3xl bg-gradient-to-r from-[#1C261D] via-[#233325] to-[#1C261D] text-white p-6 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-3xl bg-gradient-to-r from-[#1C261D] via-[#233325] to-[#1C261D] text-white p-6 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#D96123]/20 rounded-full blur-3xl pointer-events-none" />
             
@@ -307,6 +308,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </motion.section>
       )}
