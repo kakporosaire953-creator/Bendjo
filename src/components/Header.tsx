@@ -82,15 +82,15 @@ export const Header: React.FC<HeaderProps> = ({
                   className="w-full h-full object-contain mix-blend-multiply"
                 />
               </motion.div>
-              <div>
+              <div className="flex flex-col justify-center">
                 <span className="font-heading font-extrabold text-2xl tracking-tight text-[#1F2421] block leading-none">
                   Ben<span className="text-[#D96123]">Djo</span>
                 </span>
                 <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-xs text-[#2D5A36] font-extrabold tracking-wider uppercase block">
+                  <span className="text-xs sm:text-xs text-[#2D5A36] font-extrabold tracking-wider uppercase block text-[10px]">
                     THÉ NATUREL
                   </span>
-                  <span className="font-brittany text-base text-[#D96123] font-normal leading-none ml-0.5">
+                  <span className="font-brittany text-sm sm:text-base text-[#D96123] font-normal leading-none ml-0.5">
                     — Un Pur Régal
                   </span>
                 </div>

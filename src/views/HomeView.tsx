@@ -81,12 +81,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
               transition={{ duration: 0.6 }}
               className="lg:col-span-7 space-y-6 text-center lg:text-left"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#2D5A36]/20 shadow-xs">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#2D5A36] animate-pulse" />
-                <span className="text-xs font-extrabold text-[#2D5A36] uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white border border-[#2D5A36]/20 shadow-xs">
+                <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#2D5A36] animate-pulse shrink-0" />
+                <span className="text-[10px] sm:text-xs font-extrabold text-[#2D5A36] uppercase tracking-wider whitespace-nowrap">
                   100% Naturel Béninois
                 </span>
-                <span className="font-brittany text-xl text-[#D96123] font-normal leading-none ml-1">
+                <span className="font-brittany text-base sm:text-xl text-[#D96123] font-normal leading-none ml-0.5 sm:ml-1 whitespace-nowrap">
                   — Un Pur Régal
                 </span>
               </div>
@@ -259,7 +259,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           viewport={{ once: true, margin: '-50px' }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
-          <div className="relative rounded-3xl bg-gradient-to-r from-[#1C3A27] via-[#275037] to-[#1C3A27] text-white p-8 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
+          <div className="relative rounded-3xl bg-gradient-to-r from-[#1C261D] via-[#233325] to-[#1C261D] text-white p-8 sm:p-12 shadow-xl border border-emerald-600/30 overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#D96123]/20 rounded-full blur-3xl pointer-events-none" />
             
