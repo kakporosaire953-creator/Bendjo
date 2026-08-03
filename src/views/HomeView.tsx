@@ -271,11 +271,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <span className="leading-tight">Module Interactif Santé</span>
                 </div>
 
-                <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-4xl text-[#1F2421] leading-tight">
+                <h2 className="font-heading font-extrabold text-xl sm:text-2xl lg:text-4xl text-[#1F2421] lg:text-white leading-tight">
                   Quel est le meilleur <span className="text-[#D96123]">thé BenDjo</span> pour votre santé ?
                 </h2>
 
-                <p className="text-xs sm:text-sm lg:text-base text-[#1F2421] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p className="text-xs sm:text-sm lg:text-base text-[#1F2421] lg:text-white leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Faites notre <strong className="text-[#D96123]">Quiz Diagnostic Bien-Être en 4 étapes</strong>. Identifiez en 1 minute la synergie de tisanes béninoises idéale pour votre <strong className="text-[#D96123]">hypertension, digestion, sommeil, tonus ou détox</strong>.
                 </p>
 
